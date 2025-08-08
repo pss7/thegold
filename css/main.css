@@ -80,8 +80,33 @@
 
 
 /* 비디오 영역 */
-#videoWrap{height: 100vh; overflow: hidden;}
-#videoWrap video{width: 100%; height: 100%; object-fit: cover;}
+#videoWrap{position: relative; height: 0; padding-top: 35.5%; overflow: hidden;}
+#videoWrap video{position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%; object-fit: cover;}
+
+@media (max-width: 1199px){
+
+  #videoWrap{padding-top: 55%;}
+
+}
+
+@media (max-width: 767px){
+
+  #videoWrap{padding-top: 70.5%;}
+
+}
+
+@media (max-width: 576px){
+
+  #videoWrap{padding-top: 80.5%;}
+
+}
+
+@media (max-width: 480px){
+
+  #videoWrap{padding-top: 95%;}
+
+}
+
 
 /* 금융상품 보러가기 영역 */
 #productWrap01{padding: 150px 0 85px;}
