@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* 공통 - 텍스트 색상 */
+.gradientText{background: linear-gradient(to right, #F8B519, #F89419);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;}
+.mainColor{color: #FFB200;}
+
+/* 가운뎅영역 */
+.container{max-width: 1240px; margin: 0 auto; padding: 0 20px;}
+
+/* 헤더 */
+#headerWrap{position: fixed; top:-300px; left:0; right:0;  z-index: 999; transition: all .5s;}
+#headerWrap.active{top:0;}
+#headerWrap.scroll{background-color: #fff; box-shadow: 0 10px 10px rgba(0,0,0,.1);}
+#headerWrap.scroll .menuBox .menuList li h2 a,
+#headerWrap.scroll .loginBox a{color: #000;}
+#headerWrap.scroll .menuBox::after,
+#headerWrap.scroll .menuBox .menuList::after{background-color: #000;}
+#headerWrap .layoutBox{flex-shrink: 0; display: flex; align-items: center; gap: 0 50px;}
+#headerWrap .headerBox{display: flex; align-items: center; gap: 0 50px; justify-content: space-between;}
+#headerWrap .logoBox h1 a,
+#headerWrap .logoBox h1 a img{display: block;}
+#headerWrap .menuBox{display: flex; align-items: center; gap: 0 50px; position: relative;}
+#headerWrap .menuBox::after{content: ''; position: absolute; top:31px; right:-26px; width: 1px; height: 12px; background-color: #fff;}
+#headerWrap .menuBox .menuList{position: relative; display: flex; align-items: center; gap: 0 0;}
+#headerWrap .menuBox .menuList::after{content: ''; position: absolute; top:31px; right:-26px; width: 1px; height: 12px; background-color: #fff;}
+#headerWrap .menuBox .menuList:last-child::after{display: none;}
+#headerWrap .menuBox .menuList li h2 a{position: relative; padding: 26px 25px; display: block; color: #fff; font-weight: 500; font-size: 16px; transition: all .3s;}
+#headerWrap .loginBox a::before,
+#headerWrap .menuBox .menuList li h2 a::before{content: ''; position: absolute; left:0; bottom: 0; width: 0; height: 1px; background-color: #FFB200; transition: all .3s;}
+#headerWrap .loginBox{display: flex; align-items: center; gap: 0 0;} 
+#headerWrap .loginBox a{position: relative; padding: 25px; color: #fff; font-weight: 500;}
+#headerWrap .loginBox a:hover,
+#headerWrap .menuBox .menuList li h2 a:hover{color: #FFB200;}
+#headerWrap .loginBox a:hover::before,
+#headerWrap .menuBox .menuList li h2 a:hover::before{width: 100%;}
+
