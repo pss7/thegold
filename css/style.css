@@ -4,6 +4,19 @@
 .gradientText{background: linear-gradient(to right, #F8B519, #F89419);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;}
 .mainColor{color: #FFB200;}
+/* .gradientGrow{ filter:drop-shadow(0 0 4px #FFB200) drop-shadow(0 0 8px #FFC733) drop-shadow(0 0 12px #FFE066); animation: subtleGlow 3s ease-in-out infinite alternate;}
+  @keyframes subtleGlow {
+    0% {
+      filter: drop-shadow(0 0 3px #FFB200)
+              drop-shadow(0 0 6px #FFC733)
+              drop-shadow(0 0 10px #FFE066);
+    }
+    100% {
+      filter: drop-shadow(0 0 4px #FFB200)
+              drop-shadow(0 0 8px #FFC733)
+              drop-shadow(0 0 12px #FFE066);
+    }
+  } */
 
 /* 가운뎅영역 */
 .container{max-width: 1240px; margin: 0 auto; padding: 0 20px;}
