@@ -74,12 +74,6 @@ $(function () {
     return false;
   });
 
-  //aos 초기화
-  $(window).load(function () {
-    AOS.init({
-      duration: 2000
-    });
-  });
 
   //푸터
   $(".footerBanner .slickWrap .slick").slick({
