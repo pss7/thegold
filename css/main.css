@@ -193,7 +193,7 @@
 
 @media (max-width: 767px){
 
-  #eventWrap .eventListBox{margin-bottom: 45px; overflow-x: auto;}
+  #eventWrap .eventListBox{margin-bottom: 45px; overflow-x: auto; overflow-y: hidden;}
   #eventWrap .eventListBox::-webkit-scrollbar{height: 3px;}
   #eventWrap .eventListBox::-webkit-scrollbar-thumb{background-color: #FFB200; border-radius: 5px;}
   #eventWrap .eventListBox::-webkit-scrollbar-track{background-color: #F6F6F6; border-radius: 5px;}
