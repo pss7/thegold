@@ -352,3 +352,42 @@
 #reviewWrap .reviewList .box .textBox span{padding: 3px 11px; margin-bottom: 18px; display: inline-block; background-color: #FFB200; color: #fff; border-radius: 10px; font-size: 18px; font-weight: 700;}
 #reviewWrap .reviewList .box .textBox p{font-size: 18px; font-weight: 600; color: #848484; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden;}
 #reviewWrap .slide{margin-right: 36px;}
+
+@media (max-width: 1199px){
+
+  #reviewWrap .reviewList{padding-left: 20px;}
+  #reviewWrap .text{font-size: 26px;}
+  
+}
+
+@media (max-width: 1024px){
+
+  #reviewWrap .reviewList .box{gap: 0 25px;}
+  #reviewWrap .reviewList .box .imgBox img{margin-bottom: 22px;}
+  #reviewWrap .reviewList .box .imgBox .name{font-size: 18px;}
+  #reviewWrap .reviewList .box .textBox span{font-size: 16px; border-radius: 5px;}
+
+}
+
+@media (max-width: 767px){
+
+  #reviewWrap .title{margin-bottom: 10px;}
+  #reviewWrap .titleBox{margin-bottom: 50px;}
+  #reviewWrap .text{font-size: 22px;}
+  #reviewWrap .reviewList .box{gap: 0 25px;}
+  #reviewWrap .reviewList .box .imgBox img{margin-bottom: 22px;}
+  #reviewWrap .reviewList .box .imgBox .name{font-size: 18px;}
+  #reviewWrap .reviewList .box .textBox span{font-size: 16px; border-radius: 5px;}
+
+}
+
+@media (max-width: 480px){
+
+  #reviewWrap .text{font-size: 16px;}
+  #reviewWrap .slide{width: 265px; margin-right: 25px;}
+  #reviewWrap .reviewList .box .imgBox img{margin-bottom: 15px;}
+  #reviewWrap .reviewList .box{flex-direction: column; gap: 16px 0;}
+  #reviewWrap .reviewList .box .textBox{height: auto;  padding: 23px 26px 35px; border-radius: 10px;}
+  #reviewWrap .reviewList .box .textBox p{font-size: 16px;}
+
+}
