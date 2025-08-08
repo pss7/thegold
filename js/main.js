@@ -8,23 +8,32 @@ $(function () {
     });
   });
 
-  $("#reviewWrap .slick").slick({
-    variableWidth: true,
-    autoplay: true,
-    arrows: true,
-    dots: false,
-    accessibility: false,
-    draggable: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    zIndex: 1000,
-    pauseOnHover: false,
-    autoplaySpeed: 6000,
-    speed: 1500,
-    prevArrow: $('.mainBox .leftBox .prev'),
-    nextArrow: $('.mainBox .leftBox .next'),
-  });
+$("#reviewWrap .slick").slick({
+  variableWidth: true,
+  autoplay: true,
+  arrows: true,
+  dots: false,
+  accessibility: false,
+  draggable: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  zIndex: 1000,
+  pauseOnHover: false,
+  autoplaySpeed: 6000,
+  centerMode: true,
+  speed: 1500,
+  prevArrow: $('.mainBox .leftBox .prev'),
+  nextArrow: $('.mainBox .leftBox .next'),
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        centerMode: false
+      }
+    }
+  ]
+});
 
   // $('.mainBox .leftBox .slick').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
   //   var i = (currentSlide ? currentSlide : 0) + 1;
