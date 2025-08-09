@@ -445,7 +445,7 @@
 #pressReleaseWrap .pressReleaseList li a .imgBox{position: absolute; top: 50%; transform: translateY(-50%); right:0;}
 #pressReleaseWrap .pressReleaseList li a .imgBox img{display: block;}
 #pressReleaseWrap .pressReleaseBox{position: relative;}
-#pressReleaseWrap .pressReleaseBox .more{position: absolute; top:77px; right:0; font-size: 18px; font-weight: 600; color: #A6A6A6; transition: all .3s;}
+#pressReleaseWrap .pressReleaseBox .more{position: absolute; top:77px; right:0; font-size: 18px; font-weight: 600; color: #A6A6A6;}
 #pressReleaseWrap .pressReleaseBox .more:hover{color: #000;}
 
 @media (max-width: 1199px){
@@ -549,7 +549,7 @@
 #questionWrap .contentBox{display: none; padding-left: 90px;}
 #questionWrap .contentBox p{display: flex; gap: 0 15px; padding: 0 0 30px;font-size: 18px; color: #565656;}
 #questionWrap .contentBox p::before{content: ''; flex-shrink: 0; width: 35px; height: 35px; background: url(../images/main/icon16.svg)no-repeat center; background-size: contain;}
-#questionWrap .more{position: absolute; top:0; right:0; font-size: 18px; font-weight: 600; color: #A6A6A6; transition: all .3s;}
+#questionWrap .more{position: absolute; top:0; right:0; font-size: 18px; font-weight: 600; color: #A6A6A6;}
 #questionWrap .more:hover{color: #000;}
 
 @media (max-width: 1024px){
