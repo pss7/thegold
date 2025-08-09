@@ -52,7 +52,6 @@ $(function () {
     autoplaySpeed: 5000,
     centerMode: true,
     speed: 1500,
-    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 577,

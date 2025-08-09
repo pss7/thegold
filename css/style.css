@@ -65,10 +65,9 @@
 #footerWrap address{margin-bottom: 25px; font-size: 20px; color: #565656; font-weight: 700;}
 #footerWrap .footerInfoList{margin-bottom: 70px;}
 #footerWrap .footerInfoList .infoBox{display: flex; gap: 0 30px; margin-bottom: 20px;}
-
 #footerWrap .footerInfoList .infoBox:last-child{margin-bottom: 0;}
 #footerWrap .footerInfoList span{margin-right: 10px; font-weight: 700; font-size: 20px; color: #565656;}
-#footerWrap .footerInfoList em{font-size: 20px; color: #565656;}
+#footerWrap .footerInfoList em{font-size: 20px; color: #565656; word-break: keep-all;}
 #footerWrap .footerLink{display: flex; flex-wrap: wrap; justify-content: center; gap: 15px 60px; margin-bottom: 30px;}
 #footerWrap .footerLink li a{display: block; font-size: 15px; font-weight: 600; color: #565656;}
 #footerWrap .copyright{display: block; text-align: center; font-size: 13px; font-weight: 500; color:#565656;}
