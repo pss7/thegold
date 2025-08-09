@@ -48,3 +48,55 @@
 #headerWrap .loginBox a:hover::before,
 #headerWrap .menuBox .menuList li h2 a:hover::before{width: 100%;}
 
+/* 푸터 */
+#footerWrap{padding: 100px 0 80px; background-color: #FBFBFB;}
+#footerWrap .footerLogoBox{margin-bottom: 15px;}
+#footerWrap .footerLogoBox h1 img{margin-bottom: 25px; display: block; width: 150px;}
+#footerWrap .footerLogoBox h1 span{display: block; font-size: 30px; font-weight: 700; color: #000;}
+#footerWrap address{margin-bottom: 25px; font-size: 20px; color: #565656; font-weight: 700;}
+#footerWrap .footerInfoList{margin-bottom: 70px;}
+#footerWrap .footerInfoList .infoBox{display: flex; gap: 0 30px; margin-bottom: 20px;}
+
+#footerWrap .footerInfoList .infoBox:last-child{margin-bottom: 0;}
+#footerWrap .footerInfoList span{margin-right: 10px; font-weight: 700; font-size: 20px; color: #565656;}
+#footerWrap .footerInfoList em{font-size: 20px; color: #565656;}
+#footerWrap .footerLink{display: flex; flex-wrap: wrap; justify-content: center; gap: 15px 60px; margin-bottom: 30px;}
+#footerWrap .footerLink li a{display: block; font-size: 15px; font-weight: 600; color: #565656;}
+#footerWrap .copyright{display: block; text-align: center; font-size: 13px; font-weight: 500; color:#565656;}
+
+@media (max-width: 1199px){
+
+  #footerWrap{padding: 60px 0;}
+  #footerWrap .footerLogoBox h1 img{margin: 0 auto 30px;}
+  #footerWrap{text-align: center;}
+  #footerWrap .footerInfoList .infoBox{justify-content: center;}
+
+}
+
+@media (max-width: 1024px){
+
+  #footerWrap .footerLogoBox h1 span{font-size: 24px;}
+  #footerWrap address{font-size: 16px;}
+  #footerWrap .footerInfoList span,
+  #footerWrap .footerInfoList em{font-size: 17px;}
+  #footerWrap .footerInfoList{margin-bottom: 40px;}
+
+}
+
+@media (max-width: 767px){
+
+  #footerWrap .footerLogoBox h1 span{font-size: 20px;}
+  #footerWrap address{font-size: 16px;}
+  #footerWrap .footerInfoList span,
+  #footerWrap .footerInfoList em{font-size: 16px;}
+  #footerWrap .footerInfoList{margin-bottom: 40px;}
+
+}
+
+@media (max-width: 480px){
+
+  #footerWrap .footerInfoList .infoBox{flex-direction: column;  gap: 10px 0; margin-bottom: 10px;}
+  #footerWrap .footerInfoList .infoBox .box{margin-bottom: 10px;}
+  #footerWrap .footerInfoList .infoBox .box span{display: block;}
+
+}
