@@ -21,7 +21,7 @@ $(function () {
     slidesToScroll: 1,
     zIndex: 1000,
     pauseOnHover: false,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 5000,
     centerMode: true,
     speed: 1500,
     prevArrow: $('.mainBox .leftBox .prev'),
@@ -31,6 +31,36 @@ $(function () {
         breakpoint: 1200,
         settings: {
           centerMode: false
+        }
+      }
+    ]
+  });
+
+  //수상 슬라이드 영역 
+  $("#slideWrap .slick").slick({
+    variableWidth: true,
+    autoplay: false,
+    arrows: false,
+    dots: true,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    centerMode: true,
+    speed: 1500,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 577,
+        settings: {
+          variableWidth: false,
+          slidesToShow: 1,
+          centerMode: false,
+          dots:false
         }
       }
     ]
@@ -58,7 +88,7 @@ $(function () {
     dots: false,
     accessibility: false,
     draggable: true,
-    infinite: true,
+    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     zIndex: 1000,
