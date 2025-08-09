@@ -426,7 +426,7 @@
 
 @media (max-width: 360px){
 
-  #reviewWrap{padding: 70px 0;}
+  #reviewWrap{padding: 70px 0 60px;}
   #reviewWrap .reviewList .box .textBox p,
   #reviewWrap .reviewList .box .textBox span{font-size: 14px;}
   #reviewWrap .titleBox{margin-bottom: 35px;}
