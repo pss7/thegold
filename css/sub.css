@@ -3,7 +3,7 @@
 /* 공통 */
 button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3B3B3!important; cursor: auto;}
 #wrap {display: flex; flex-direction: column; min-height: 100%;}
-#subWrap{flex: 1; margin-top: 76px; padding: 100px 0 150px;}
+#subWrap{flex: 1; margin-top: 76px; padding: 90px 0 150px;}
 
 @media (max-width: 1199px){
 
