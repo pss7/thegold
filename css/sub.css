@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#wrap {display: flex; flex-direction: column; min-height: 100%;}
+#subWrap{flex: 1; margin-top: 76px; padding: 100px 0 70px;}
+
+@media (max-width: 1199px){
+
+  #subWrap{margin-top: 63px;}
+
+}
+
+/* 헤더 */
+#headerWrap{background-color: #fff; border-bottom: 1px solid #EAEAEA;}
+#headerWrap .menuBox .menuList::after,
+#headerWrap .menuBox::after{background-color: #000;}
+#headerWrap .loginBox a,
+#headerWrap .menuBox .menuList li h2 a{color: #000;}
