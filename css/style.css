@@ -48,12 +48,49 @@
 #headerWrap .menuBox .menuList li h2 a:hover{color: #FFB200;}
 #headerWrap .loginBox a:hover::before,
 #headerWrap .menuBox .menuList li h2 a:hover::before{width: 100%;}
+#headerWrap .mobileMenuBtn{display: none;}
+#headerWrap .mobileMenuWrap{display: none;}
 
 @media (max-width: 1199px){
 
+  #headerWrap{background-color: #fff!important;}
   #headerWrap .logoBox h1 a{padding: 20px 0;}
   #headerWrap .logoBox h1 a img{width: 110px;}
   #headerWrap .layoutBox{display: none;}
+  #headerWrap .mobileMenuBtn {display: inline-flex; flex-direction: column; justify-content: space-between;
+  width: 27px; height: 17px;}
+  #headerWrap .mobileMenuBtn em {display: block; height: 3px; background-color: #000; border-radius: 3px;}
+  #headerWrap .mobileMenuWrap{display: block; padding: 70px 20px 20px; width: 100%; position: fixed; top:0; left:100%; bottom: 0; background-color: #fff; z-index: 999; transition: all .3s;}
+  #headerWrap .mobileMenuWrap.active{left:0;}
+  #headerWrap .mobileMenuWrap .mobileLoginBox{margin-bottom: 24px; display: flex; align-items: center; gap: 0 10px;}
+  #headerWrap .mobileMenuWrap .mobileLoginBox a{flex: 1; display: block; height: 40px; line-height: 40px; border: 1px solid #EAEAEA; text-align: center; border-radius: 10px;}
+  #headerWrap .mobileMenuWrap .mobileLoginBox a.login{color: #fff; background-color: #FFB200; border: 0;}
+  #headerWrap .mobileMenuWrap .mobileMenu{padding: 0 0 25px; display: flex; flex-wrap: wrap; border-bottom: 1px solid #EAEAEA;}
+  #headerWrap .mobileMenuWrap .mobileMenu li{width: 50%;}
+  #headerWrap .mobileMenuWrap .mobileMenu li h2 a{display: flex; align-items: center; gap: 0 10px; padding: 13px 0; font-size: 16px; color: #000; font-weight: 400;}
+  #headerWrap .mobileMenuWrap .mobileMenu li h2 a::before{content: ''; margin-top: -1px; width: 20px; height: 20px; background-size: contain!important;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(1) h2 a::before{background: url(../images/common/icon01.svg)no-repeat center;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(2) h2 a::before{background: url(../images/common/icon10.svg)no-repeat center;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(3) h2 a::before{background: url(../images/common/icon07.svg)no-repeat center;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(4) h2 a::before{background: url(../images/common/icon12.svg)no-repeat center;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(5) h2 a::before{background: url(../images/common/icon04.svg)no-repeat center;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(6) h2 a::before{background: url(../images/common/icon02.svg)no-repeat center;}
+  #headerWrap .mobileLink{margin-top: 24px;}
+  #headerWrap .mobileLink li a{position: relative; display: block; padding: 13px 0;}
+  #headerWrap .mobileLink li a::after {content: ""; position: absolute; right: 5px; top: 50%;
+  width: 6px; height: 6px; border-top: 2px solid #000; border-right: 2px solid #000; transform: translateY(-50%) rotate(45deg);}
+  #headerWrap .mobileCloseBtn{position: absolute; top:29px; right:30px;}
+  #headerWrap .mobileCloseBtn::before,
+  #headerWrap .mobileCloseBtn::after {content: ""; position: absolute;
+  left: 50%; top: 50%; width: 20px; height: 2px; background-color: #000; transform-origin: center;}
+  #headerWrap .mobileCloseBtn::before {transform: translate(-50%, -50%) rotate(45deg);}
+  #headerWrap .mobileCloseBtn::after {transform: translate(-50%, -50%) rotate(-45deg);}
+
+}
+
+@media (max-width: 414px){
+
+  #headerWrap .mobileMenuWrap .mobileLoginBox a{border-radius: 5px;}
 
 }
 
