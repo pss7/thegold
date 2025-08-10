@@ -8,6 +8,32 @@ $(function () {
     });
   });
 
+  //후기 영상
+  $("#reviewVideoWrap .slick").slick({
+    variableWidth: true,
+    autoplay: false,
+    arrows: false,
+    dots: true,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    centerMode: false,
+    speed: 1500,
+    responsive: [
+      {
+        breakpoint: 415,
+        settings: {
+          variableWidth: false,
+        }
+      }
+    ]
+  });
+
   //후기 슬라이드
   $("#reviewWrap .slick").slick({
     variableWidth: true,
@@ -65,6 +91,21 @@ $(function () {
     ]
   });
 
+  //자주 묻는 질문 
+  $('#questionWrap .questionList li a').click(function () {
+    if ($(this).hasClass('active')) {
+      $('#questionWrap .questionList li a').removeClass('active');
+      $('#questionWrap .questionList li a').next().slideUp();
+
+    } else {
+      $('#questionWrap .questionList li a').removeClass('active');
+      $('#questionWrap .questionList li a').next().slideUp();
+      $(this).addClass('active');
+      $(this).next().slideDown();
+    }
+    return false
+  })
+
   //탭 슬라이드
   $('#infoWrap03 .tabBox .tabBtn').on('click', function () {
 
@@ -98,31 +139,7 @@ $(function () {
     nextArrow: $('#infoWrap03 .next'),
   });
 
-  //후기 영상
-  $("#reviewVideoWrap .slick").slick({
-    variableWidth: true,
-    autoplay: false,
-    arrows: false,
-    dots: true,
-    accessibility: false,
-    draggable: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    zIndex: 1000,
-    pauseOnHover: false,
-    autoplaySpeed: 5000,
-    centerMode: false,
-    speed: 1500,
-    responsive: [
-      {
-        breakpoint: 415,
-        settings: {
-          variableWidth: false,
-        }
-      }
-    ]
-  });
+
 
 
 });
