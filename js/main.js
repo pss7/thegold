@@ -59,7 +59,7 @@ $(function () {
           variableWidth: false,
           slidesToShow: 1,
           centerMode: false,
-          dots:false
+          dots: false
         }
       }
     ]
@@ -98,6 +98,31 @@ $(function () {
     nextArrow: $('#infoWrap03 .next'),
   });
 
+  //후기 영상
+  $("#reviewVideoWrap .slick").slick({
+    variableWidth: true,
+    autoplay: false,
+    arrows: false,
+    dots: true,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    centerMode: false,
+    speed: 1500,
+    responsive: [
+      {
+        breakpoint: 415,
+        settings: {
+          variableWidth: false,
+        }
+      }
+    ]
+  });
 
 
 });

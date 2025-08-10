@@ -432,16 +432,67 @@
 
 
 
+/* 후기 비디오 영역 */
+#reviewVideoWrap{padding: 150px 0 80px}
+#reviewVideoWrap .titleBox{margin-bottom: 110px;}
+#reviewVideoWrap .reviewVideoList .box{flex: none; width: 379px; margin: 0 15px;}
+#reviewVideoWrap .reviewVideoList .box a{display: block;}
+#reviewVideoWrap .reviewVideoList .box .imgBox{margin-bottom: 25px; display: block; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 10px rgba(0, 0, 0, .15);}
+#reviewVideoWrap .reviewVideoList .box .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all 1s;}
+#reviewVideoWrap .reviewVideoList .box p{font-size: 20px; color: #000; font-weight: 700;}
+#reviewVideoWrap .reviewVideoList .box a:hover img{transform: scale(1.3);}
+#reviewVideoWrap .reviewVideoList .box a:hover p{text-decoration: underline;}
+#reviewVideoWrap .slick-dots{margin-top: 100px; display: flex!important; flex-wrap: wrap; gap: 0 20px; align-items: center; justify-content: center;}
+#reviewVideoWrap .slick-dots li.slick-active button{width: 50px; background: #000;}
+#reviewVideoWrap .slick-dots li button{width: 20px; height: 15px; text-indent: -9999px; border-radius: 50px; background-color:#EAEAEA; cursor: pointer;}
 
+@media (max-width: 1024px){
 
+  #reviewVideoWrap{padding: 100px 0 0;}
+  #reviewVideoWrap .titleBox{margin-bottom: 80px;}
+  /* #reviewVideoWrap .slick-dots{margin-top: 60px; gap: 0 10px;} */
+  #reviewVideoWrap .slick-dots{display: none!important;}
+  #reviewVideoWrap .slick-dots li button{width: 18px;}
+  #reviewVideoWrap .slick-dots li.slick-active button{width: 40px;}
+  #reviewVideoWrap .reviewVideoList .box p{font-size: 18px;}
 
+}
 
+@media (max-width: 767px){
 
+  #reviewVideoWrap .reviewVideoList .box{width: 332px;}
+  #reviewVideoWrap .reviewVideoList .box p{font-size: 16px;}
+  /* #reviewVideoWrap .slick-dots li button{height: 13px;}
+  #reviewVideoWrap .slick-dots li.slick-active button{width: 30px;} */
+  
+}
 
+@media (max-width: 480px){
 
+  #reviewVideoWrap{padding: 80px 0 0;}
+  #reviewVideoWrap .titleBox{margin-bottom: 60px;}
+  #reviewVideoWrap .reviewVideoList .box{width: 250px; margin: 0 10px;}
+  /* #reviewVideoWrap .slick-dots{margin-top: 30px;} */
 
+}
 
+@media (max-width: 414px){
 
+  #reviewVideoWrap{padding: 60px 0 0;}
+  #reviewVideoWrap .titleBox{margin-bottom: 50px;}
+  #reviewVideoWrap .reviewVideoList .box p{text-align: center;}
+  #reviewVideoWrap .reviewVideoList .box{width: 150px; margin: 0;}
+  #reviewVideoWrap .reviewVideoList .box .imgBox{margin-bottom: 25px; border-radius: 5px;}
+  /* #reviewVideoWrap .slick-dots li button{width: 15px; height: 8px;} */
+
+}
+
+@media (max-width: 320px){
+
+  #reviewVideoWrap{padding: 50px 0 0;}
+  #reviewVideoWrap .titleBox{margin-bottom: 40px;}
+
+}
 
 /* 후기 영역 */
 #reviewWrap{padding: 110px 0;}
@@ -499,6 +550,12 @@
   #reviewWrap .reviewList .box .textBox span{font-size: 14px;}
   #reviewWrap .titleBox{margin-bottom: 35px;}
   #reviewWrap .reviewList .box .imgBox .name{font-size: 14px;}
+
+}
+
+@media (max-width: 320px){
+
+  #reviewWrap{padding: 60px 0;}
 
 }
 
