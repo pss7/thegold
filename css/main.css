@@ -109,6 +109,53 @@
 
 }
 
+/* 기업소개 영역 */
+#introduceWrap{padding: 130px 0 80px;}
+#introduceWrap .titleBox strong{margin-bottom:15px; font-size: 30px; line-height: 1;}
+#introduceWrap .titleBox .title{font-size: 32px; line-height: 1; }
+#introduceWrap .titleBox{margin-bottom: 100px;}
+#introduceWrap .videoBox{position: relative;padding-top: 60%; border-radius: 20px; overflow: hidden;}
+#introduceWrap .videoBox iframe{position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%;}
+
+@media (max-width: 1024px){
+
+  #introduceWrap{padding: 130px 0 60px;}
+
+}
+
+@media (max-width: 767px){
+
+  #introduceWrap .videoBox{border-radius: 10px;}
+  #introduceWrap{padding: 110px 0 30px;}
+
+}
+
+@media (max-width: 480px){
+
+  #introduceWrap{padding: 90px 0 0;}
+  #introduceWrap .titleBox{margin-bottom: 65px;}
+  #introduceWrap .titleBox strong{font-size: 24px;}
+  #introduceWrap .titleBox .title{font-size: 28px;}
+
+}
+
+@media (max-width: 414px){
+
+  #introduceWrap{padding: 70px 0 0;}
+  #introduceWrap .titleBox{margin-bottom: 45px;}
+  #introduceWrap .titleBox strong{margin-bottom: 12px; font-size: 20px;}
+  #introduceWrap .titleBox .title{font-size: 22px;}
+
+}
+
+@media (max-width: 360px) {
+  
+  #introduceWrap .videoBox{padding-top: 76%;}
+
+}
+
+
+
 /* 금융상품 보러가기 영역 */
 #productWrap01{padding: 150px 0 85px;}
 #productWrap01 .productBox{display: flex; justify-content: center; gap: 0 85px;}
@@ -169,6 +216,12 @@
   #productWrap01 .textBox .text01{margin-bottom: 24px; font-size: 22px; color: #fff;}
   #productWrap01 .textBox .text02{font-size: 16px; color: #fff;}
   #productWrap01 .textBox .view{height: 45px; line-height: 45px; border-radius: 7px;}
+
+}
+
+@media (max-width: 320px){
+
+  #productWrap01{padding: 60px 0;}
 
 }
 
@@ -374,6 +427,21 @@
   #userWrap .list li strong .text02, #userWrap .list li strong{font-size: 28px;}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 후기 영역 */
 #reviewWrap{padding: 110px 0;}
@@ -598,7 +666,8 @@
 #infoListWrap{padding: 0 0 120px;}
 #infoListWrap .list{display: flex; gap: 0 32px;}
 #infoListWrap .list li{flex: 1;}
-#infoListWrap .list li a{position: relative; height: 294px; padding: 30px 20px 20px 30px; display: block; border: 1px solid #EAEAEA; border-radius: 20px;}
+#infoListWrap .list li a{position: relative; height: 294px; padding: 30px 20px 20px 30px; display: block; border: 1px solid #EAEAEA; border-radius: 20px; transition: all .3s;}
+#infoListWrap .list li a:hover{border:1px solid #FFB200;}
 #infoListWrap .list li a span{display: block; margin-bottom: 15px; font-size: 18px; font-weight: 600; color: #A6A6A6;}
 #infoListWrap .list li a h3{font-size: 24px; font-weight: 600; color: #000;}
 #infoListWrap .list li a::after{content: ''; position: absolute; background-size: contain!important;}
@@ -664,22 +733,6 @@
   #infoListWrap .list{gap: 5px 2%;}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 금투자 안내 영역 */
 #infoWrap01{padding: 110px 0 120px;}
