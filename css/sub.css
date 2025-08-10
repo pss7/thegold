@@ -17,13 +17,13 @@
 .formBox{margin-bottom: 25px;}
 .formBox span{display: block; margin-bottom: 7px; font-weight: 500; font-size: 18px; color: #000;}
 .inputLayoutBox{display: flex; gap: 0 15px;}
-.inputTextBox input{padding:0 20px 0 16px; width: 100%; height: 60px; border: 1px solid #F8F8F8; font-size: 18px; font-weight: 500; border-radius: 13px; color: #000;}
+.inputTextBox input{padding:0 20px 0 16px; width: 100%; height: 60px; border: 1px solid #F8F8F8; font-size: 18px; font-weight: 500; border-radius: 13px; color: #000; background-color: #fff;}
 .selectBox .selectBtn:focus,
 .inputTextBox input:focus{outline: 0; border: 1px solid #FFB200;}
 .inputTextBox input::placeholder{color: #D0D0D0;}
 
 .selectBox{position: relative;}
-.selectBox .selectBtn{position: relative; padding:0 20px 0 16px; width: 100%; height: 60px; border: 1px solid #F8F8F8; font-size: 18px; font-weight: 500; border-radius: 13px; color: #D0D0D0; text-align: left;}
+.selectBox .selectBtn{position: relative; padding:0 20px 0 16px; width: 100%; height: 60px; border: 1px solid #F8F8F8; font-size: 18px; font-weight: 500; border-radius: 13px; color: #D0D0D0; text-align: left; background-color: #fff;}
 .selectBox .selectBtn::after{content: ''; width: 14px; height: 9px; position: absolute; top: 50%; transform: translateY(-50%); right:20px; background: url(../images/sub/arrow_icon01.svg)no-repeat center; transition: all .3s;}
 .selectBox .selectBtn.active::after{transform: translateY(-50%) rotate(-180deg);}
 .selectBox .selectList{display: none; padding: 20px 15px; position: absolute; top:63px; left:0; right:0; border: 1px solid #E3E3E3; background-color: #fff; border-radius: 16px;}
@@ -32,7 +32,7 @@
 .selectBox .selectList li .btn{display: block; padding: 0 10px 0 15px;  width: 100%; height: 43px; text-align: left; font-size: 18px; font-weight: 500; color: #000; border-radius: 8px; transition: all .3s;}
 .selectBox .selectList li .btn:hover{background-color: #FFF7E5;}
 
-.inputChkWrap{margin-bottom: 15px; padding: 16px; border-radius: 13px; border: 1px solid #F8F8F8;}
+.inputChkWrap{margin-bottom: 15px; padding: 16px; border-radius: 13px; border: 1px solid #F8F8F8; background-color: #fff;}
 .inputChkWrap .inputChkBox{width: 100%; display: flex; align-items: center; justify-content: space-between; }
 .inputChkWrap:last-child{margin-bottom: 0;}
 .inputChkWrap .agreeView{font-weight: 500; color: #B3B3B3; line-height: 1;}
@@ -55,7 +55,6 @@
   .inputChkBox input:checked + label::before{width: 22px; height: 22px;}
   .inputChkWrap{padding: 17px 16px;}
   
-
 }
 
 @media (max-width: 480px){
