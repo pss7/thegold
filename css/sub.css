@@ -468,3 +468,59 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .introduceBox .infoBox02 .titleBox{margin-bottom: 54px;}
 
 }
+
+/* 기업소식 */
+.newsBox .newsList{position: relative;}
+.newsBox .titleBox{position: relative; z-index: 99;}
+.newsBox .newsList::before{content: ''; width: 259px; height: 996px; position: absolute; top:50%; transform: translateY(-50%); left:0; bottom: 0; background: url(../images/sub/gradient01.png)no-repeat center; z-index: 9; background-size: contain!important;}
+.newsBox .newsList::after{content: ''; width: 259px; height: 996px; position: absolute; top:50%; transform: translateY(-50%); right:0; bottom: 0; background: url(../images/sub/gradient02.png)no-repeat center; z-index: 9; background-size: contain!important;}
+.newsBox .newsList a{display: block; width: 711px; margin: 0 52px;}
+.newsBox .newsList a .imgBox{margin-bottom: 20px; height: 402px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,.1);}
+.newsBox .newsList a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all .5s;}
+.newsBox .newsList a h3{font-size: 30px; font-weight: 700; color: #000;}
+.newsBox .newsList a:hover .imgBox img{transform: scale(1.2);}
+.newsBox .slick-dots{margin-top: 130px; display: flex!important; gap: 0 20px; align-items: center; justify-content: center;}
+.newsBox .slick-dots li.slick-active button{width: 50px; background: #000;}
+.newsBox .slick-dots li button{width: 20px; height: 15px; text-indent: -9999px; border-radius: 50px; background-color:#EAEAEA; cursor: pointer;}
+
+@media (max-width: 1024px){
+
+  .newsBox .slick-dots{ gap: 0 15px;}
+  .newsBox .slick-dots li button{width: 18px;}
+  .newsBox .slick-dots li.slick-active button{width: 40px;}
+
+  .newsBox .newsList a{width: 600px; margin: 0 35px;}
+  .newsBox .newsList a .imgBox{height: 350px; border-radius: 15px;}
+  .newsBox .newsList a h3{font-size: 24px;}
+  .newsBox .slick-dots{margin-top: 100px;}
+
+}
+
+@media (max-width: 767px){
+
+  .newsBox .slick-dots li button{height: 13px;}
+  .newsBox .slick-dots li.slick-active button{width: 30px;}
+
+  .newsBox .newsList a{width: 550px; margin: 0 20px;}
+  .newsBox .newsList a .imgBox{ border-radius: 10px;}
+  .newsBox .newsList a h3{font-size: 20px;}
+
+  .newsBox .newsList::before,
+  .newsBox .newsList::after{display: none;}
+  
+}
+
+@media (max-width: 576px){
+
+  .newsBox .newsList a .imgBox{position: relative; height: 0; padding-top: 60%;}
+  .newsBox .newsList a .imgBox img{position: absolute; top:0; left:0; right:0; bottom: 0;}
+  .newsBox .newsList a h3{font-size: 18px;}
+
+}
+
+@media (max-width: 414px){
+
+  .newsBox .titleBox{margin-bottom: 40px;}
+  .newsBox .newsList a h3{font-size: 16px;}
+
+}
