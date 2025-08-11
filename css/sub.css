@@ -198,8 +198,9 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productBox .top span{margin-bottom: 15px; display: block; font-size: 20px; font-weight: 700; color: #fff;}
 .productBox .top .title{font-size: 36px; font-weight: 700; color: #fff; line-height: 1.4;}
 .productBox .productList{margin-bottom: 60px; display: flex; flex-wrap: wrap; gap: 32px 2.8%;}
-.productBox .productList li{width: 48.6%; border: 1px solid #DDDDDD; border-radius: 20px; overflow: hidden;}
-.productBox .productList li a{display: block; position: relative;}
+.productBox .productList li{width: 48.6%;}
+.productBox .productList li a{display: block; position: relative; border: 1px solid #DDDDDD; border-radius: 20px; overflow: hidden;}
+.productBox .productList li a:hover{border: 1px solid #FFB200;}
 .productBox .productList li a .badge{position: absolute; top:0; right:0;}
 .productBox .productList li .textBox{padding: 48px 20px 40px 48px;}
 .productBox .productList li .textBox .infoBox{margin-bottom: 10px; display: flex; gap: 0 15px;}
