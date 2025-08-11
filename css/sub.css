@@ -154,7 +154,6 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 }
 
 /* 이벤트 */
-.eventBox .titleBox{margin-bottom: 82px;}
 .eventBox .event_List{display: flex; flex-wrap: wrap; gap: 72px 2.67%;}
 .eventBox .event_List li{width: 31.55%;}
 .eventBox .event_List li a{display: block;}
@@ -179,7 +178,6 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
 @media (max-width: 480px){
 
-  .eventBox .titleBox{margin-bottom: 48px;}
   .eventBox .event_List{gap: 60px 0}
   .eventBox .event_List li{width: 100%;}
 
@@ -191,5 +189,123 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .eventBox .event_List li a .imgBox{margin-bottom: 13px;}
   .eventBox .event_List li a .textBox h3{ margin-bottom: 0;font-size: 16px;}
   .eventBox .event_List li a .textBox .date{font-size: 14px;}
+
+}
+
+/* 금융상품 */
+.productBox .top{position: relative; margin-bottom: 32px; padding: 40px 20px 20px 38px; height: 250px; border-radius: 20px; background-color: #FFB200;}
+.productBox .top::after{content: ''; width: 303px; height: 228px; position: absolute; top:12px; right:56px; background: url(../images/sub/product_icon01.svg)no-repeat center; background-size: contain;}
+.productBox .top span{margin-bottom: 15px; display: block; font-size: 20px; font-weight: 700; color: #fff;}
+.productBox .top .title{font-size: 36px; font-weight: 700; color: #fff; line-height: 1.4;}
+.productBox .productList{margin-bottom: 60px; display: flex; flex-wrap: wrap; gap: 32px 2.8%;}
+.productBox .productList li{width: 48.6%; border: 1px solid #DDDDDD; border-radius: 20px; overflow: hidden;}
+.productBox .productList li a{display: block; position: relative;}
+.productBox .productList li a .badge{position: absolute; top:0; right:0;}
+.productBox .productList li .textBox{padding: 48px 20px 40px 48px;}
+.productBox .productList li .textBox .infoBox{margin-bottom: 10px; display: flex; gap: 0 15px;}
+.productBox .productList li .textBox .infoBox span{padding: 4px 11px; border-radius: 8px; font-weight: 500;}
+.productBox .productList li .textBox .infoBox span.best{background-color: #FFF7E5; color: #FFB200;}
+.productBox .productList li .textBox .infoBox span.new{background-color: #EBFAF9; color: #39B9B3;}
+.productBox .productList li .textBox h4{margin-bottom: 13px; font-size: 36px; color: #000; font-weight: 700;}
+.productBox .productList li .textBox p{font-size: 24px; font-weight: 700; color: #12124F;}
+.productBox .productList li .textBox p strong{color: #FFB200;}
+.productBox .productList li .infoListBox{display: flex; gap: 0 72px; padding: 42px 20px 46px 48px; background-color: #FBFBFB;}
+.productBox .productList li .infoListBox .box span{display: block; margin-bottom: 15px; font-weight: 700; color: #9E9E9E;}
+.productBox .productList li .infoListBox .box strong{font-size: 24px; font-weight: 700; color: #12124F;}
+.productBox .infoTextBox{margin-bottom: 32px; padding: 30px 20px 30px 38px; border: 1px solid #DDDDDD; border-radius: 20px;}
+.productBox .infoTextBox h4{margin-bottom: 25px; font-size: 36px; font-weight: 700; color: #000;}
+.productBox .infoTextBox .box{margin-bottom: 40px;}
+.productBox .infoTextBox .box:last-child{margin-bottom: 0;}
+.productBox .infoTextBox .box span{display: block; margin-bottom: 5px; font-size: 20px; font-weight: 700; color: #000;}
+.productBox .infoTextBox .box em{display: block; font-size: 18px; color: #9E9E9E; font-weight: 600;}
+
+@media (max-width: 1024px){
+
+  .productBox .productList li .textBox{padding: 40px 20px 40px 35px;}
+  .productBox .productList li .textBox h4{font-size: 26px;}
+  .productBox .productList li .textBox p{font-size: 18px;}
+  .productBox .productList li .infoListBox{padding: 35px 20px 35px 35px;}
+  .productBox .productList li .infoListBox .box strong{font-size: 22px;}
+  .productBox .productList li .infoListBox .box span{margin-bottom: 10px;}
+  .productBox .productList li .infoListBox{gap: 0 35px;}
+  
+  .productBox .top span{font-size: 18px;}
+  .productBox .top .title{font-size: 32px;}
+  .productBox .top::after{top: 50%; transform: translateY(-50%); width: 250px; height: 185px;}
+
+  .productBox .infoTextBox h4{font-size: 28px;}
+  .productBox .infoTextBox .box span{font-size: 18px;}
+  .productBox .infoTextBox .box em{font-size: 16px;}
+  .productBox .infoTextBox .box{margin-bottom: 30px;}
+  .productBox .infoTextBox{padding: 25px 30px;}
+  
+}
+
+@media (max-width: 767px){
+
+  .productBox .top span{font-size: 16px;}
+  .productBox .top .title{font-size: 26px;}
+  .productBox .top{height: 200px;}
+  .productBox .top::after{top: 50%; transform: translateY(-50%); width: 200px; height: 135px;}
+  
+  .productBox .productList li{width: 100%;}
+  .productBox .productList li .textBox{padding: 35px 20px 35px 30px;}
+  .productBox .productList li .textBox h4{font-size: 24px;}
+  .productBox .productList li .textBox p{font-size: 16px;}
+  .productBox .productList li .infoListBox{padding: 30px 20px 30px 30px;}
+  .productBox .productList li .infoListBox .box strong{font-size: 18px;}
+  .productBox .productList li .infoListBox .box span{margin-bottom: 5px;}
+  .productBox .productList li .infoListBox{gap: 0 30px;}
+  .productBox .productList li a .badge{width: 100px;}
+
+  .productBox .productList{margin-bottom: 40px;}
+  .productBox .infoTextBox h4{font-size: 24px;}
+  .productBox .infoTextBox .box span{font-size: 16px;}
+  .productBox .infoTextBox .box em{font-size: 14px;}
+  .productBox .infoTextBox .box{margin-bottom: 20px;}
+  .productBox .infoTextBox{padding: 25px 30px;}
+
+}
+
+@media (max-width: 480px){
+
+  .productBox .top{height: 180px; padding: 40px 20px 20px 20px;}
+  .productBox .top::after{right: 0;}
+  .productBox .top span{font-size: 16px;}
+  .productBox .top .title{font-size: 22px;}
+
+  .productBox .productList li .textBox{padding: 35px 20px 35px 25px;}
+  .productBox .productList li .infoListBox{padding: 30px 20px 30px 25px;}
+  .productBox .productList li .textBox .infoBox span{font-size: 14px; border-radius: 5px;}
+  .productBox .productList li .textBox h4{margin-bottom: 8px; font-size: 20px;}
+  .productBox .productList li .textBox p{font-size: 14px;}
+  .productBox .productList li .infoListBox .box strong{font-size: 16px;}
+  .productBox .productList li a .badge{width: 90px;}
+
+  .productBox .productList{margin-bottom: 30px;}
+  .productBox .infoTextBox h4{font-size: 20px;}
+  .productBox .infoTextBox .box{margin-bottom: 15px;}
+  .productBox .infoTextBox{padding: 25px 20px;}
+  
+}
+
+@media (max-width: 414px){
+
+  .productBox .top{height: 150px; padding: 0 0 0 20px;  display: flex; flex-direction: column; justify-content: center;}
+  .productBox .top span{font-size: 16px;}
+  .productBox .top .title{font-size: 18px;}
+  .productBox .top::after{top: 50%; transform: translateY(-50%); width: 160px; height: 95px;}
+
+  .productBox .productList{gap: 20px 0;}
+  .productBox .productList li a .badge{width: 70px;}
+
+}
+
+@media (max-width: 320px){
+
+  .productBox .top{border-radius: 15px;}
+  .productBox .top span{font-size: 14px;}
+  .productBox .top .title{font-size: 16px;}
+  .productBox .top::after{width: 120px;}
 
 }
