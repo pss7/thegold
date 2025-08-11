@@ -310,3 +310,125 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productBox .top::after{width: 120px;}
 
 }
+
+/* 회사소개 */
+.introduceBox{margin-top: -90px;}
+.introduceBox .top{padding: 0 20px; position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden;}
+.introduceBox .top::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/sub/introduce_img01.jpg)no-repeat center; background-size: cover; z-index: -1; transform: scale(1.6); transition: all 7s;}
+.introduceBox .top h3{margin-top: -90px; color: #fff; text-align: center; font-size: 45px; word-break: keep-all;} 
+.introduceBox .top h3 span{margin-bottom: 10px; display: block; font-size: 20px; font-weight: 700;}
+.introduceBox .top h3 strong{color: #FFB200;}
+.introduceBox .top h3 strong em{position: relative;}
+.introduceBox .top h3 strong em::before{content: ''; width: 10px; height: 10px; position: absolute; top:-19px; left:50%; transform: translateX(-50%); border-radius: 50%; background-color: #FFB200;}
+.introduceBox .top.active::after{transform: scale(1);}
+.introduceBox .infoBox{padding: 120px 0;}
+.introduceBox .infoBox .titleBox{margin-bottom: 110px;}
+.introduceBox .infoBox .infoList{display: flex; gap: 0 23px;}
+.introduceBox .infoBox .infoList li{flex: 1; position: relative; padding: 90px 30px 20px; border: 1px solid #EAEAEA; border-radius: 20px;}
+.introduceBox .infoBox .infoList li .number{position: absolute; top:30px; right:30px; width: 30px; height: 30px; line-height: 30px; border-radius: 50%; text-align: center; background-color: #FFB200; font-size: 20px; font-weight: 700; color: #fff;}
+.introduceBox .infoBox .infoList li .title{margin-bottom: 30px; font-size: 24px; font-weight: 700; color: #000;}
+.introduceBox .infoBox .infoList li .text{font-size: 18px; font-weight: 600; color: #949393;}
+.introduceBox .coreValueBox{padding: 160px 0; background-color: #FCFCFC;}
+.introduceBox .coreValueBox .titleBox{margin-bottom: 80px;}
+.introduceBox .coreValueList{max-width: 1000px; margin: 0 auto; display: flex; gap: 0 40px;}
+.introduceBox .coreValueList li{flex: 1; display: flex; align-items: center; flex-direction: column; }
+.introduceBox .coreValueList li h3{margin:0 auto 40px; max-width: 220px; width: 100%; height: 80px; line-height: 80px; border-radius: 16px; color: #FFB200; font-size: 26px; font-weight: 700; text-align: center; background-color: #FFF5DE;}
+.introduceBox .coreValueList li::before{content: ''; width: 100px; height: 100px; margin-bottom: 48px;}
+.introduceBox .coreValueList li:nth-child(1)::before{background: url(../images/sub/corevalue_icon01.svg)no-repeat center;}
+.introduceBox .coreValueList li:nth-child(2)::before{background: url(../images/sub/corevalue_icon02.svg)no-repeat center;}
+.introduceBox .coreValueList li:nth-child(3)::before{background: url(../images/sub/corevalue_icon03.svg)no-repeat center;}
+.introduceBox .coreValueList li:nth-child(4)::before{background: url(../images/sub/corevalue_icon04.svg)no-repeat center;}
+.introduceBox .coreValueList li p{text-align: center; font-size: 18px; font-weight: 600; color: #949393; word-break: keep-all;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199px){
+
+  .introduceBox .infoBox .infoList{flex-wrap: wrap; gap: 20px 2%;}
+  .introduceBox .infoBox .infoList li{width: 49%; flex: none;}
+
+}
+
+@media (max-width: 1024px){
+
+  .introduceBox .coreValueBox{padding: 80px 0;}
+  .introduceBox .coreValueList li h3{margin: 0 auto 20px; height: 50px; line-height: 50px; font-size: 20px; border-radius: 5px;}
+  .introduceBox .coreValueList li p{font-size: 16px;}
+
+  .introduceBox .infoBox .infoList li{padding: 60px 30px 20px;}
+  .introduceBox .infoBox .infoList li .title{margin-bottom: 20px; font-size: 20px;}
+  .introduceBox .infoBox .infoList li .text{font-size: 16px;}
+  .introduceBox .infoBox .infoList li .number{top:20px; width: 25px; height: 25px; line-height: 25px; font-size: 18px;}
+
+  .introduceBox .top h3 span{font-size: 18px;}
+  .introduceBox .top h3{font-size: 36px;}
+  .introduceBox .top h3 strong em::before{width: 8px; height: 8px; top: -10px;}
+
+}
+
+@media (max-width: 767px){
+
+  .introduceBox .infoBox .infoList li{padding: 50px 20px 30px;}
+  .introduceBox .infoBox .infoList li .title{margin-bottom: 15px; font-size: 18px;}
+  .introduceBox .infoBox .infoList li .number{font-size: 16px;}
+
+  .introduceBox .top h3 span{font-size: 16px;}
+  .introduceBox .top h3{font-size: 32px;}
+
+  .introduceBox .coreValueList{gap: 100px 0; flex-wrap: wrap;}
+  .introduceBox .coreValueList li{flex: none; width: 50%;}
+  .introduceBox .coreValueList li::before{margin-bottom: 25px;}
+  .introduceBox .coreValueList li h3{font-size: 18px;}
+  
+
+}
+
+@media (max-width: 576px){
+
+  .introduceBox .infoBox .infoList{gap: 20px 0;}
+  .introduceBox .infoBox .infoList li{width: 100%;}
+  .introduceBox .infoBox .infoList li .text br{display: none;}
+
+  .introduceBox .coreValueList li{width: 100%;}
+  .introduceBox .coreValueList li h3{max-width: none;}
+
+}
+
+@media (max-width: 414px){
+
+  .introduceBox .coreValueList li h3{font-size: 16px;}
+  .introduceBox .coreValueList li p{font-size: 14px;}
+
+}
+
+@media (max-width: 360px){
+
+  .introduceBox .infoBox{padding: 80px 0;}
+  .introduceBox .infoBox .titleBox{margin-bottom: 70px;}
+
+  .introduceBox .top h3{font-size: 26px;}
+  .introduceBox .top h3 strong em::before{width: 5px; height: 5px;}
+
+  .introduceBox .coreValueBox .titleBox{margin-bottom: 60px;}
+
+}
+
+@media (max-width: 320px){
+
+  .introduceBox .infoBox .infoList li .title{margin-bottom: 10px; font-size: 16px;}
+  .introduceBox .infoBox .infoList li .text{font-size: 14px;}
+  .introduceBox .infoBox .infoList li .number{top: 15px; right: 20px; width: 20px; height: 20px; line-height: 20px; font-size: 14px;}
+
+}
