@@ -339,20 +339,19 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .introduceBox .coreValueList li:nth-child(3)::before{background: url(../images/sub/corevalue_icon03.svg)no-repeat center;}
 .introduceBox .coreValueList li:nth-child(4)::before{background: url(../images/sub/corevalue_icon04.svg)no-repeat center;}
 .introduceBox .coreValueList li p{text-align: center; font-size: 18px; font-weight: 600; color: #949393; word-break: keep-all;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.introduceBox .infoBox02{padding: 120px 0;}
+.introduceBox .infoBox02 .titleBox{ margin-bottom: 110px;}
+.introduceBox .infoBox02 .infoText{display: flex; gap: 0 32px;}
+.introduceBox .infoBox02 .infoText li{padding: 35px 20px 20px 48px; position: relative; flex: 1; height: 374px; border-radius: 20px; background-color: #FFB200; z-index: 1;}
+.introduceBox .infoBox02 .infoText li::after{content: ''; position: absolute; background-size: contain!important; z-index: -1;}
+.introduceBox .infoBox02 .infoText li:nth-child(1):after{width: 349px; height: 250px; bottom: 0; left: 50%; transform: translateX(-50%); background: url(../images/sub/info_icon01.svg)no-repeat center;}
+.introduceBox .infoBox02 .infoText li:nth-child(2):after{bottom: 11px; width: 282px; height: 212px; right:26px; background: url(../images/sub/info_icon02.svg)no-repeat center;}
+.introduceBox .infoBox02 .infoText li strong{display: block; margin-bottom: 12px; font-size: 30px; color: #fff;}
+.introduceBox .infoBox02 .infoText li p{font-size: 22px; font-weight: 700; color: #fff;}
+.introduceBox .introduceTextBox{padding: 90px 0 0;}
+.introduceBox .introduceTextBox .titleBox{margin-bottom: 80px;}
+.introduceBox .introduceTextBox .titleBox .title{text-align: left;}
+.introduceBox .introduceTextBox .text{font-size: 20px; color: #565656; line-height: 2;}
 
 @media (max-width: 1199px){
 
@@ -376,6 +375,17 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .introduceBox .top h3{font-size: 36px;}
   .introduceBox .top h3 strong em::before{width: 8px; height: 8px; top: -10px;}
 
+  .introduceBox .infoBox02{padding: 80px 0;}
+  .introduceBox .infoBox02 .titleBox{margin-bottom: 80px;}
+  .introduceBox .infoBox02 .infoText{flex-direction: column; gap: 30px 0;}
+  .introduceBox .infoBox02 .infoText li{padding: 35px 20px 150px 30px; width: 100%; height: auto;}
+  .introduceBox .infoBox02 .infoText li strong{font-size: 26px;}
+  .introduceBox .infoBox02 .infoText li p{font-size: 20px;}
+
+  .introduceBox .introduceTextBox .titleBox{margin-bottom: 60px;}
+  .introduceBox .introduceTextBox{padding: 60px 0 0;}
+  .introduceBox .introduceTextBox .text{font-size: 18px;}
+
 }
 
 @media (max-width: 767px){
@@ -392,6 +402,14 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .introduceBox .coreValueList li::before{margin-bottom: 25px;}
   .introduceBox .coreValueList li h3{font-size: 18px;}
   
+  .introduceBox .infoBox02 .infoText li strong{font-size: 24px;}
+  .introduceBox .infoBox02 .infoText li p{font-size: 18px;}
+
+  .introduceBox .introduceTextBox .titleBox{margin-bottom: 40px;}
+  .introduceBox .introduceTextBox{padding: 40px 0 0;}
+  .introduceBox .introduceTextBox .text{font-size: 16px;}
+  .introduceBox .introduceTextBox .text br{display: none;}
+  .introduceBox .introduceTextBox .text span{display: block; margin-top: 20px;}
 
 }
 
@@ -404,12 +422,27 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .introduceBox .coreValueList li{width: 100%;}
   .introduceBox .coreValueList li h3{max-width: none;}
 
+  .introduceBox .infoBox02 .infoText li:nth-child(1):after{width: 240px; height: 172px;}
+  .introduceBox .infoBox02 .infoText li:nth-child(2):after{width: 175px; height: 130px; right: 0; bottom: 0;}
+
+  .introduceBox .introduceTextBox .titleBox{margin-bottom: 30px;}
+  .introduceBox .introduceTextBox{padding: 20px 0 0;}
+
 }
 
 @media (max-width: 414px){
 
   .introduceBox .coreValueList li h3{font-size: 16px;}
   .introduceBox .coreValueList li p{font-size: 14px;}
+
+  .introduceBox .infoBox02 .infoText li{padding: 30px 20px 150px;}
+  .introduceBox .infoBox02 .infoText li strong{font-size: 16px;}
+  .introduceBox .infoBox02 .infoText li p{font-size: 14px;}
+  .introduceBox .infoBox02 .infoText li p br{display: none;}
+
+ .introduceBox .introduceTextBox .titleBox{margin-bottom: 20px;}
+  .introduceBox .introduceTextBox{padding: 0;}
+
 
 }
 
@@ -427,8 +460,11 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
 @media (max-width: 320px){
 
+  .introduceBox .infoBox02{padding: 60px 0;}
   .introduceBox .infoBox .infoList li .title{margin-bottom: 10px; font-size: 16px;}
   .introduceBox .infoBox .infoList li .text{font-size: 14px;}
   .introduceBox .infoBox .infoList li .number{top: 15px; right: 20px; width: 20px; height: 20px; line-height: 20px; font-size: 14px;}
+
+  .introduceBox .infoBox02 .titleBox{margin-bottom: 54px;}
 
 }
