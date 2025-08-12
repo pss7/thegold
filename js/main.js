@@ -12,7 +12,7 @@ $(function () {
   $("#reviewVideoWrap .slick").slick({
     variableWidth: true,
     autoplay: false,
-    arrows: false,
+    arrows: true,
     dots: true,
     accessibility: false,
     draggable: true,
@@ -24,6 +24,8 @@ $(function () {
     autoplaySpeed: 5000,
     centerMode: false,
     speed: 1500,
+    prevArrow: $('#reviewVideoWrap .control .prev'),
+    nextArrow: $('#reviewVideoWrap .control .next'),
     responsive: [
       {
         breakpoint: 415,
@@ -38,7 +40,7 @@ $(function () {
   $("#reviewWrap .slick").slick({
     variableWidth: true,
     autoplay: true,
-    arrows: true,
+    arrows: false,
     dots: false,
     accessibility: false,
     draggable: true,
@@ -50,8 +52,7 @@ $(function () {
     autoplaySpeed: 5000,
     centerMode: true,
     speed: 1500,
-    prevArrow: $('.mainBox .leftBox .prev'),
-    nextArrow: $('.mainBox .leftBox .next'),
+
     responsive: [
       {
         breakpoint: 1200,
