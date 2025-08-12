@@ -913,8 +913,11 @@ body::-webkit-scrollbar {display: none;}
 .popupBox .closeBtn::before{transform: translate(-50%, -50%) rotate(45deg);}
 .popupBox .closeBtn::after{transform: translate(-50%, -50%) rotate(-45deg);}
 .popupBox .control button{ display: flex; align-items: center; justify-content: center; position: absolute; top: 50%; transform: translateY(-65%); width: 40px;height: 40px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.3); color: #fff; font-size: 18px;}
-.popupBox .control .prev {left: 10px;}
-.popupBox .control .next {right: 10px;}
+.popupBox .control button::after{content: ''; width: 15px; height: 15px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-size: contain!important;}
+.popupBox .control .prev{left: 10px;}
+.popupBox .control .next{right: 10px;}
+.popupBox .control .prev::after {background: url(../images/main/arrow_icon.png) no-repeat center; transform: translate(-50%, -50%) rotate(-180deg);}
+.popupBox .control .next::after {background: url(../images/main/arrow_icon.png) no-repeat center; }
 .popupBox .closeBtnBox{display: flex; align-items: center; justify-content: center; background: linear-gradient(to right, #F8B519, #F89419);}
 .popupBox .closeBtnBox .btn{display: block; height: 45px; flex: 1; text-align: center; color: #000; font-size: 16px; font-weight: 500; color: #fff;}
 
@@ -928,6 +931,7 @@ body::-webkit-scrollbar {display: none;}
 
   .popupBox .control button{width: 30px; height: 30px; transform: translateY(-70%);}
   .popupBox .closeBtnBox .btn{height: 35px; font-size: 14px;}
+  .popupBox .control button::after{width: 12px; height: 12px;}
   
 }
 
