@@ -913,6 +913,13 @@
 
 @media (max-width: 414px){
 
-  .popupBox .control button{width: 30px; height: 30px;}
+  .popupBox .control button{width: 30px; height: 30px; transform: translateY(-70%);}
+  .popupBox .closeBtnBox .btn{height: 35px; font-size: 14px;}
+  
+}
+
+@media (max-width: 360px){
+
+  .popupBox .closeBtnBox .btn{height: 30px; font-size: 12px;}
 
 }
