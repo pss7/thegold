@@ -951,5 +951,59 @@ color: #626262; font-weight: 600;}
   .questionBox .questionTitle{font-size: 18px;}
   .questionBox .keywordList li{font-size: 14px;}
 
+}
+
+/* 공지사항 상세 */
+.noticeBox .title{margin-bottom: 100px; font-size: 45px; font-weight: 700; color: #000; text-align: center;}
+.noticeBox .topTitleBox{ padding-bottom: 50px;}
+.noticeBox .topTitleBox h4{margin-bottom: 25px; font-size: 35px; font-weight: 700; color: #000;}
+.noticeBox .topTitleBox .date{font-size: 25px; font-weight: 700; color:#C0C0C0;}
+.noticeBox .content{padding: 50px 0; font-size: 18px; color: #565656;  border: 1px solid #F1F1F1; border-width: 1px 0;}
+.noticeBox .btnBox{display: flex;  gap: 0 40px; margin-bottom: 40px;}
+.noticeBox .btnBox a{flex: 1; height: 80px; line-height: 80px; background-color: #F4F4F4; border-radius: 16px; color: #B3B3B3; font-size: 20px; font-weight: 600; text-align: center;}
+.noticeBox .btnBox a span{display: flex; align-items: center; justify-content: center; gap: 0 20px;}
+.noticeBox .btnBox a.prev span::before{margin-top: -1px; content: ''; width: 17px; height: 14px; background: url(../images/sub/prev_arrow_icon.svg)no-repeat center; background-size: contain!important;}
+.noticeBox .btnBox a.next span::after{margin-top: -1px; content: ''; width: 17px; height: 14px; background: url(../images/sub/prev_arrow_icon.svg)no-repeat center; background-size: contain!important; transform: rotate(180deg);}
+
+@media (max-width: 1024px){
+
+  .noticeBox .title{font-size: 36px;}
+  .noticeBox .content{padding: 25px 0; font-size: 16px;}
+  .noticeBox .topTitleBox{padding-bottom: 25px;}
+  .noticeBox .topTitleBox h4{margin-bottom: 15px; font-size: 25px;}
+  .noticeBox .topTitleBox .date{font-size: 18px;}
+  .noticeBox .btnBox{margin-bottom: 20px;}
+  .noticeBox .btnBox a{height: 70px; line-height: 70px; font-size: 18px; border-radius: 7px;}
+
+}
+
+@media (max-width: 767px){
+
+  .noticeBox .title{font-size: 30px;}
+  .noticeBox .topTitleBox h4{margin-bottom: 10px; font-size: 22px;}
+  .noticeBox .topTitleBox .date{font-size: 16px;}
+  .noticeBox .btnBox{gap: 0 20px;}
+  .noticeBox .btnBox a{height: 60px; line-height: 60px; font-size: 16px;}
+
+}
+
+@media (max-width: 414px){
+
+  .noticeBox .title{margin-bottom: 70px; font-size: 26px;}
+  .noticeBox .topTitleBox h4{font-size: 18px;}
+  .noticeBox .btnBox{gap: 0 10px;}
+  .noticeBox .btnBox a span{gap: 0 10px;}
+  .noticeBox .btnBox a{height: 50px; line-height: 50px; font-size: 14px;}
+  .noticeBox .btnBox a.prev span::before{width: 14px; height: 11px;}
+  .noticeBox .btnBox a.next span::after{width: 14px; height: 11px;}
+
+}
+
+@media (max-width: 320px){
+
+  .noticeBox .title{margin-bottom: 50px; font-size: 20px;}
+  .noticeBox .topTitleBox h4{font-size: 14px;}
+  .noticeBox .topTitleBox .date{font-size: 14px;}
+  .noticeBox .content{font-size: 14px;}
 
 }
