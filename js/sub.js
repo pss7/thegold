@@ -76,4 +76,19 @@ $(function () {
     $('.issuedModalWrap').removeClass('active');
   });
 
+    //자주 묻는 질문 
+  $('.questionBox .questionList li a').click(function () {
+    if ($(this).hasClass('active')) {
+      $('.questionBox .questionList li a').removeClass('active');
+      $('.questionBox .questionList li a').next().slideUp();
+
+    } else {
+      $('.questionBox .questionList li a').removeClass('active');
+      $('.questionBox .questionList li a').next().slideUp();
+      $(this).addClass('active');
+      $(this).next().slideDown();
+    }
+    return false
+  })
+
 });
