@@ -712,7 +712,6 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .applicationBox .contentBox .moneyBox p{text-align: center; font-weight: 600; color: #949393;}
 
 
-
 @media (max-width: 1024px){
 
   .applicationBox h3{font-size: 36px;}
@@ -774,6 +773,8 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .applicationBox .contentBox .moneyBox span{font-size: 18px;}
   .applicationBox .contentBox .moneyBox .moneyNumber em,
   .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 18px;}
+  .applicationBox .contentBox .infoBox .inputTextWrap{flex-direction: column; gap: 5px 0;}
+  .applicationBox .contentBox .infoBox .inputTextWrap .btn{height: 45px; width: 100%;}
 
 }
 
