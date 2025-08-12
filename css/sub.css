@@ -670,6 +670,11 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 }
 
 /* 입출금신청 */
+.issuedModalWrap{opacity: 0; display: flex; align-items: center; justify-content: center; position: fixed; top:0; left:0; right:0; bottom: 0; background: rgba(0,0,0,.5); z-index: 9999; visibility: hidden; transition: all .5s;}
+.issuedModalWrap.active{opacity: 1; visibility:visible;}
+.issuedModalBox{position: relative; padding: 35px 38px 110px; max-width: 855px; width: 90%; background-color: #fff; border-radius: 20px;}
+.issuedModalBox h1{margin-bottom: 90px; text-align: center; font-size: 36px; color: #000;}
+.issuedModalBox .modalCloseBtn{width: 20px; height: 20px; position: absolute; top:36px; right:36px; background: url(../images/sub/close_btn.svg)no-repeat center;}
 .applicationBox h3{margin-bottom: 35px; padding: 0 20px; font-size: 45px; font-weight: 700; color: #000; text-align: center;}
 .applicationBox .tabBox{display: flex;}
 .applicationBox .tabBox .tab{flex: 1; height: 76px; text-align: center; color: #B3B3B3; font-size: 23px; font-weight: 600;}
@@ -680,17 +685,20 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .applicationBox .contentBox{padding: 50px 0 80px;}
 .applicationBox .contentBox .infoList li .title{margin-bottom: 30px; font-size: 24px; font-weight: 700; color: #000;}
 .applicationBox .contentBox .infoList li .text01{margin-bottom: 30px; font-size: 18px; font-weight: 600; color: #949393;}
-.applicationBox .contentBox .infoList li .text01 strong{color: #FFB200;;}
+.applicationBox .contentBox .infoList li .text01 .inquiryBtn{color: #FFB200; text-decoration: underline;}
 .applicationBox .contentBox .infoList li .text02{color: #FF8484; font-weight: 600;}
 .applicationBox .contentBox .infoList li .number{position: absolute; top:30px; right:30px; width: 30px; height: 30px; border-radius: 50%; text-align: center; color: #fff; font-weight: 700; font-size: 20px; background-color: #FFB200;}
 .applicationBox .contentBox .infoBox{margin-bottom: 49px; padding: 38px; border-radius: 20px; border: 1px solid #DDDDDD; background-color: #fff;}
 .applicationBox .contentBox .infoBox h4{margin-bottom: 40px; color: #000; font-size: 36px; font-weight: 700;}
-.applicationBox .contentBox .infoBox .applicationBtnBox{display: flex; flex-wrap: wrap;  gap: 7px 30px;}
-.applicationBox .contentBox .infoBox .applicationBtnBox .btn{padding: 0 15px; height: 37px; border-radius: 50px; font-size: 16px; font-weight: 600; color: #626262; background-color: #F4F4F4;}
-.applicationBox .contentBox .infoBox .applicationBtnBox .reset{display: flex; align-items: center; gap: 0 10px; background-color: #FFEBEB; color: #FF3D3D;}
-.applicationBox .contentBox .infoBox .applicationBtnBox .reset::before{content: ''; width: 18px; height: 19px; background: url(../images/sub/reset_icon.svg)no-repeat center;}
+.applicationBtnBox{display: flex; flex-wrap: wrap;  gap: 7px 30px;}
+.applicationBtnBox .btn{padding: 0 15px; height: 37px; border-radius: 50px; font-size: 16px; font-weight: 600; color: #626262; background-color: #F4F4F4;}
+.applicationBtnBox .reset{display: flex; align-items: center; gap: 0 10px; background-color: #FFEBEB; color: #FF3D3D;}
+.applicationBtnBox .reset::before{content: ''; width: 18px; height: 19px; background: url(../images/sub/reset_icon.svg)no-repeat center;}
+.issuedModalWrap .infoBox .inputTextBox,
 .applicationBox .contentBox .infoBox .inputTextBox{width: 100%;}
+.issuedModalWrap .infoBox .inputTextWrap,
 .applicationBox .contentBox .infoBox .inputTextWrap{display: flex; gap: 0 20px; margin-bottom: 20px;}
+.issuedModalWrap .infoBox .inputTextWrap .btn,
 .applicationBox .contentBox .infoBox .inputTextWrap .btn{width: 179px; text-align: center; border-radius: 16px; background-color: #FFB200; color: #fff; font-size: 18px; font-weight: 700;}
 .applicationBox .contentBox .infoBox .historyBtnBox{margin-bottom: 40px; display: flex; gap: 0 20px;}
 .applicationBox .contentBox .infoBox .historyBtnBox .btn{display: block; width: 104px; height: 48px; text-align: center; border: 1px solid #F1F1F1; border-radius: 16px; background-color: #fff; font-size: 14px; color: #D3D3D3; font-weight: 700;}
@@ -738,6 +746,11 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .applicationBox .contentBox .moneyBox .moneyNumber em,
   .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 26px;}
   .applicationBox .contentBox .moneyBox span{font-size: 22px;}
+
+  .issuedModalBox{padding: 35px 20px 60px;}
+  .issuedModalBox{border-radius: 10px;}
+  .issuedModalBox h1{margin-bottom: 48px; font-size: 28px;}
+  .issuedModalBox .modalCloseBtn{top: 20px; right:20px;}
   
 }
 
@@ -757,6 +770,12 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 22px;}
   .applicationBox .contentBox .moneyBox{border-radius: 10px;}
 
+  .issuedModalBox{padding: 35px 20px 60px;}
+  .issuedModalBox h1{margin-bottom: 40px; font-size: 22px;}
+  .issuedModalWrap .infoBox .inputTextWrap{flex-direction: column; gap: 10px 0;}
+  .issuedModalWrap .infoBox .inputTextWrap .btn{width: 100%; height: 40px; border-radius: 8px; font-size: 16px;}
+  .applicationBtnBox{gap: 7px 10px;}
+
 }
 
 @media (max-width: 480px){
@@ -775,6 +794,8 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 18px;}
   .applicationBox .contentBox .infoBox .inputTextWrap{flex-direction: column; gap: 5px 0;}
   .applicationBox .contentBox .infoBox .inputTextWrap .btn{height: 45px; width: 100%;}
+
+
 
 }
 

@@ -68,4 +68,12 @@ $(function () {
 
   });
 
+  $('.applicationBox .inquiryBtn').click(function () {
+    $('.issuedModalWrap').addClass('active');
+  });
+
+    $('.issuedModalWrap .modalCloseBtn').click(function () {
+    $('.issuedModalWrap').removeClass('active');
+  });
+
 });
