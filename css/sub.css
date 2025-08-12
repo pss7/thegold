@@ -668,3 +668,140 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .inquiryBox .inquiryList li a h4 em{font-size: 13px;}
 
 }
+
+/* 입출금신청 */
+.applicationBox h3{margin-bottom: 35px; padding: 0 20px; font-size: 45px; font-weight: 700; color: #000; text-align: center;}
+.applicationBox .tabBox{display: flex;}
+.applicationBox .tabBox .tab{flex: 1; height: 76px; text-align: center; color: #B3B3B3; font-size: 23px; font-weight: 600;}
+.applicationBox .tabBox .tab.active{color: #FFB200; border-bottom: 1px solid #FFB200;}
+.applicationBox .applicationContentBox{background-color: #FFFDF9;}
+.applicationBox .contentBox .infoList{margin-bottom: 49px; display: flex; gap: 0 23px;}
+.applicationBox .contentBox .infoList li{flex: 1; position: relative; padding: 70px 30px 30px 30px; border: 1px solid #EAEAEA; border-radius: 20px; background-color: #fff;}
+.applicationBox .contentBox{padding: 50px 0 80px;}
+.applicationBox .contentBox .infoList li .title{margin-bottom: 30px; font-size: 24px; font-weight: 700; color: #000;}
+.applicationBox .contentBox .infoList li .text01{margin-bottom: 30px; font-size: 18px; font-weight: 600; color: #949393;}
+.applicationBox .contentBox .infoList li .text01 strong{color: #FFB200;;}
+.applicationBox .contentBox .infoList li .text02{color: #FF8484; font-weight: 600;}
+.applicationBox .contentBox .infoList li .number{position: absolute; top:30px; right:30px; width: 30px; height: 30px; border-radius: 50%; text-align: center; color: #fff; font-weight: 700; font-size: 20px; background-color: #FFB200;}
+.applicationBox .contentBox .infoBox{margin-bottom: 49px; padding: 38px; border-radius: 20px; border: 1px solid #DDDDDD; background-color: #fff;}
+.applicationBox .contentBox .infoBox h4{margin-bottom: 40px; color: #000; font-size: 36px; font-weight: 700;}
+.applicationBox .contentBox .infoBox .applicationBtnBox{display: flex; flex-wrap: wrap;  gap: 7px 30px;}
+.applicationBox .contentBox .infoBox .applicationBtnBox .btn{padding: 0 15px; height: 37px; border-radius: 50px; font-size: 16px; font-weight: 600; color: #626262; background-color: #F4F4F4;}
+.applicationBox .contentBox .infoBox .applicationBtnBox .reset{display: flex; align-items: center; gap: 0 10px; background-color: #FFEBEB; color: #FF3D3D;}
+.applicationBox .contentBox .infoBox .applicationBtnBox .reset::before{content: ''; width: 18px; height: 19px; background: url(../images/sub/reset_icon.svg)no-repeat center;}
+.applicationBox .contentBox .infoBox .inputTextBox{width: 100%;}
+.applicationBox .contentBox .infoBox .inputTextWrap{display: flex; gap: 0 20px; margin-bottom: 20px;}
+.applicationBox .contentBox .infoBox .inputTextWrap .btn{width: 179px; text-align: center; border-radius: 16px; background-color: #FFB200; color: #fff; font-size: 18px; font-weight: 700;}
+.applicationBox .contentBox .infoBox .historyBtnBox{margin-bottom: 40px; display: flex; gap: 0 20px;}
+.applicationBox .contentBox .infoBox .historyBtnBox .btn{display: block; width: 104px; height: 48px; text-align: center; border: 1px solid #F1F1F1; border-radius: 16px; background-color: #fff; font-size: 14px; color: #D3D3D3; font-weight: 700;}
+.applicationBox .contentBox .infoBox .historyBtnBox .btn.active{background-color: #F4F4F4; color: #626262;}
+.applicationBox .contentBox .infoBox .historyList li{flex-wrap: wrap; margin-bottom: 47px; display: flex; justify-content: space-between; align-items: center; gap: 7px 20px;}
+.applicationBox .contentBox .infoBox .historyList li .leftBox{display: flex; align-items: center; gap: 0 40px;}
+.applicationBox .contentBox .infoBox .historyList li .date{font-weight: 700; font-size: 30px; color: #DFDFDF;}
+.applicationBox .contentBox .infoBox .historyList li .box{display: flex; flex-direction: column; gap: 0;}
+.applicationBox .contentBox .infoBox .historyList li .box em{font-size: 25px; font-weight: 700; color: #232323;}
+.applicationBox .contentBox .infoBox .historyList li .box .time{font-size: 18px; color: #565656;}
+.applicationBox .contentBox .infoBox .historyList li .price{ font-size: 25px; font-weight: 700; color: #000;}
+.applicationBox .contentBox .infoBox .historyList li .price.deposit{color: #FF3D3D;}
+.applicationBox .contentBox .moneyBox{margin-bottom: 49px; padding: 23px 20px 40px; background-color: #fff; border-radius: 20px; border: 1px solid #EAEAEA;}
+.applicationBox .contentBox .moneyBox span{gap: 10px 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 25px; font-weight: 700; color: #000;}
+.applicationBox .contentBox .moneyBox span::before{width: 100px; height: 85px; content: ''; background: url(../images/sub/money_icon.svg)no-repeat center;}
+.applicationBox .contentBox .moneyBox .moneyNumber{margin-bottom: 5px; justify-content: center; display: flex; align-items: center; gap: 0 0; font-size: 40px; font-weight: 600; text-align: center;} 
+.applicationBox .contentBox .moneyBox .moneyNumber strong{color: #F8B519;}
+.applicationBox .contentBox .moneyBox .moneyNumber em{font-weight: 600; font-size: 40px; color:#000;}
+.applicationBox .contentBox .moneyBox p{text-align: center; font-weight: 600; color: #949393;}
+
+
+
+@media (max-width: 1024px){
+
+  .applicationBox h3{font-size: 36px;}
+  .applicationBox .tabBox .tab{font-size: 18px;}
+  .applicationBox .contentBox .infoList{flex-direction: column; gap: 10px 0;}
+  .applicationBox .contentBox .infoList li{padding: 28px 30px 20px 30px; flex: none; width: 100%; border-radius: 10px;}
+  .applicationBox .contentBox .infoList li .title{margin-bottom: 10px; font-size: 20px;}
+  .applicationBox .contentBox .infoList li .text01{margin-bottom: 10px;}
+  .applicationBox .contentBox .infoList li .text02,
+  .applicationBox .contentBox .infoList li .text01{font-size: 16px;}
+  .applicationBox .contentBox .infoList li br{display: none;}
+  .applicationBox .contentBox .infoList li .number{margin-bottom: 15px; display: block; position: static; width: 25px; height: 25px; line-height: 25px; font-size: 16px;}
+  .applicationBox .contentBox .infoBox h4{margin-bottom: 25px; font-size: 26px;}
+  .applicationBox .contentBox .infoBox{padding: 28px 20px 20px;}
+  .applicationBox .contentBox .infoBox .applicationBtnBox{gap: 7px 15px}
+  .applicationBox .contentBox .infoBox .inputTextWrap .btn{border-radius: 10px;}
+
+  .applicationBox .contentBox .infoBox .historyList li .date{font-size: 22px;}
+  .applicationBox .contentBox .infoBox .historyList li .box .time{font-size: 16px;}
+  .applicationBox .contentBox .infoBox .historyList li .price{font-size: 20px;}
+  .applicationBox .contentBox .infoBox .historyList li .box em{font-size: 20px;}
+  .applicationBox .contentBox .infoBox .historyList li .leftBox{gap: 0 24px;}
+
+  .applicationBox .contentBox .moneyBox .moneyNumber em,
+  .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 26px;}
+  .applicationBox .contentBox .moneyBox span{font-size: 22px;}
+  
+}
+
+@media (max-width: 767px){
+
+  .applicationBox h3{font-size: 30px;}
+  .applicationBox .tabBox .tab{height: 50px; font-size: 16px;}
+  .applicationBox .contentBox .infoList{margin-bottom: 30px;}
+  .applicationBox .contentBox .infoBox h4{font-size: 22px;}
+  .applicationBox .contentBox .infoList li .title{font-size: 18px;}
+  .applicationBox .contentBox .infoBox .inputTextWrap{gap: 0 10px;}
+  .applicationBox .contentBox .infoBox .inputTextWrap .btn{font-size: 16px;}
+
+  .applicationBox .contentBox .moneyBox span{font-size: 20px;}
+  .applicationBox .contentBox .moneyBox{margin-bottom: 20px;}
+  .applicationBox .contentBox .moneyBox .moneyNumber em,
+  .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 22px;}
+  .applicationBox .contentBox .moneyBox{border-radius: 10px;}
+
+}
+
+@media (max-width: 480px){
+
+  .applicationBox .contentBox .infoBox h4{font-size: 20px;}
+  .applicationBox h3{font-size: 26px;}
+  .applicationBox .contentBox .infoBox .historyBtnBox{flex-direction: column; gap: 10px;}
+  .applicationBox .contentBox .infoBox .historyBtnBox .btn{width: 100%; border-radius: 7px;}
+  .applicationBox .contentBox .infoBox .historyList li .price,
+  .applicationBox .contentBox .infoBox .historyList li .date,
+  .applicationBox .contentBox .infoBox .historyList li .box em{font-size: 18px;}
+  .applicationBox .contentBox .infoBox .historyList li .leftBox{gap: 0 15px;}
+
+  .applicationBox .contentBox .moneyBox span{font-size: 18px;}
+  .applicationBox .contentBox .moneyBox .moneyNumber em,
+  .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 18px;}
+
+}
+
+@media (max-width: 414px){
+
+  .applicationBox h3{font-size: 22px;}
+  .applicationBox .contentBox .infoList li .number{width: 20px; height: 20px; line-height: 20px; font-size: 14px;}
+  .applicationBox .contentBox .infoList li .title{font-size: 16px;}
+  .applicationBox .contentBox .infoList li .text02,
+  .applicationBox .contentBox .infoList li .text01{font-size: 15px;}
+  .applicationBox .contentBox .infoList li{padding: 20px 30px 30px 20px;}
+  .applicationBox .contentBox .infoBox h4{font-size: 18px;}
+  .applicationBox .contentBox .infoBox .applicationBtnBox .btn{font-size: 14px;}
+  .applicationBox .contentBox .infoBox .historyList li .box .time,
+  .applicationBox .contentBox .infoBox .historyList li .price,
+  .applicationBox .contentBox .infoBox .historyList li .date,
+  .applicationBox .contentBox .infoBox .historyList li .box em{font-size: 14px;}
+  
+  .applicationBox .contentBox .moneyBox .moneyNumber em,
+  .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 16px;}
+
+}
+
+@media (max-width: 360px){
+
+  .applicationBox .contentBox .infoBox .historyList li .box{text-align: center;}
+  .applicationBox .contentBox .infoBox .historyList li{margin-bottom: 20px; padding: 20px 0; flex-direction: column; align-items: center; border: 1px solid #F4F4F4; border-width: 1px 0;}
+  .applicationBox .contentBox .infoBox .historyList li .leftBox{flex-direction: column; gap: 5px 0;}
+
+}
+

@@ -52,4 +52,20 @@ $(function () {
     ]
   });
 
+  //입-출금 신청
+  $('.applicationBox .contentBox').hide();
+  $('.applicationBox .contentBox').first().show();
+
+  $('.applicationBox .tabBox .tab').click(function () {
+
+    $('.applicationBox .tabBox .tab').removeClass('active');
+    $(this).addClass('active');
+
+    let idx = $(this).index();
+
+    $('.applicationBox .contentBox').hide();
+    $('.applicationBox .contentBox').eq(idx).show();
+
+  });
+
 });
