@@ -838,6 +838,9 @@
 #infoWrap03 .control button{position: absolute; top: 50%; transform: translateY(-50%); width: 20px; height: 38px;}
 #infoWrap03 .control .prev{left:0;  background: url(../images/main/arrow_icon03.svg)no-repeat center; transform: rotate(-180deg);}
 #infoWrap03 .control .next{right:0;  background: url(../images/main/arrow_icon03.svg)no-repeat center;}
+#infoWrap03 .control button.slick-disabled {
+  display: none !important;
+}
 
 @media(max-width: 1199px){
 
