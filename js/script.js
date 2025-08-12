@@ -2,7 +2,10 @@ $(function () {
 
   //팝업
   $(window).load(function () {
-    $('.popupBox').fadeIn();
+    $('.popupWrap').addClass('active');
+    if (($('.popupWrap').hasClass('active'))) {
+      $('body').addClass('fixed');
+    } 
   });
 
   $(".popupBox .slick").slick({
@@ -21,6 +24,12 @@ $(function () {
     prevArrow: $('.popupBox .prev'),
     nextArrow: $('.popupBox .next'),
   });
+
+  $('.popupBox .closeBtn').click(function () {
+    $('.popupWrap').removeClass('active');
+    $('body').removeClass('fixed');
+  });
+
 
   //헤더 
   $(window).load(function () {
