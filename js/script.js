@@ -7,7 +7,7 @@ $(function () {
 
   $(".popupBox .slick").slick({
     autoplay: true,
-    arrows: false,
+    arrows: true,
     dots: false,
     accessibility: false,
     draggable: true,
@@ -18,13 +18,9 @@ $(function () {
     pauseOnHover: false,
     autoplaySpeed: 5000,
     speed: 1500,
+    prevArrow: $('.popupBox .prev'),
+    nextArrow: $('.popupBox .next'),
   });
-
-  $('.popupBox .closeBtn').click(function () {
-
-    $('.popupBox').hide();
-
-  })
 
   //헤더 
   $(window).load(function () {
@@ -67,3 +63,4 @@ $(function () {
 
 
 });
+
