@@ -711,7 +711,8 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .issuedModalBox{position: relative; padding: 35px 38px 110px; max-width: 855px; width: 90%; background-color: #fff; border-radius: 20px;}
 .issuedModalBox h1{margin-bottom: 90px; text-align: center; font-size: 36px; color: #000;}
 .issuedModalBox .modalCloseBtn{width: 20px; height: 20px; position: absolute; top:36px; right:36px; background: url(../images/sub/close_btn.svg)no-repeat center;}
-.applicationBox h3{margin-bottom: 35px; padding: 0 20px; font-size: 45px; font-weight: 700; color: #000; text-align: center;}
+.applicationBox{padding: 130px 0 0;}
+.applicationBox h3{margin-bottom: 70px; padding: 0 20px; font-size: 45px; font-weight: 700; color: #000; text-align: center;}
 .applicationBox .tabBox{display: flex;}
 .applicationBox .tabBox .tab{flex: 1; height: 76px; text-align: center; color: #B3B3B3; font-size: 23px; font-weight: 600;}
 .applicationBox .tabBox .tab.active{color: #FFB200; border-bottom: 1px solid #FFB200;}
@@ -792,6 +793,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
 @media (max-width: 767px){
 
+  .applicationBox{padding: 90px 0 0;}
   .applicationBox h3{font-size: 30px;}
   .applicationBox .tabBox .tab{height: 50px; font-size: 16px;}
   .applicationBox .contentBox .infoList{margin-bottom: 30px;}
