@@ -18,7 +18,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 }
 
 /* 공통 - 상단 */
-#subWrap .topBox{height: 446px; margin-bottom: 130px;}
+#subWrap .topBox{position: relative; height: 446px; margin-bottom: 130px; z-index: 999;}
 #subWrap .topBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 
 @media (max-width: 1199px){
@@ -362,7 +362,6 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 }
 
 /* 회사소개 */
-.introduceBox{margin-top: -90px;}
 .introduceBox .top{padding: 0 20px; position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden;}
 .introduceBox .top::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/sub/introduce_img01.jpg)no-repeat center; background-size: cover; z-index: -1; transform: scale(1.6); transition: all 7s;}
 .introduceBox .top h3{margin-top: -90px; color: #fff; text-align: center; font-size: 45px; word-break: keep-all;} 
