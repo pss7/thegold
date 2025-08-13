@@ -1042,9 +1042,9 @@ color: #626262; font-weight: 600;}
 .assetBox .assetInfoBox02{margin-bottom: 32px;}
 .assetBox .assetInfoBox02 .assetInfoList{display: flex; gap: 0 32px;}
 .assetBox .assetInfoBox02 .assetInfoList > li{flex: 1; border: 1px solid #DDDDDD; border-radius: 20px; overflow: hidden;}
-.assetBox .assetInfoBox02 .assetInfoList > li .topBox{padding: 47px 20px 40px 47px;}
-.assetBox .assetInfoBox02 .assetInfoList > li .topBox .my{margin-bottom: 6px; display: block; width: 43px; height: 31px; line-height: 31px; border-radius: 8px; background-color: #EBFAF9; color: #39B9B3; font-weight: 500; text-align: center;}
-.assetBox .assetInfoBox02 .assetInfoList > li .topBox h4{font-size: 36px; font-weight: 700; color: #000;}
+.assetBox .assetInfoBox02 .assetInfoList > li .topProductBox{ padding: 47px 20px 40px 47px;}
+.assetBox .assetInfoBox02 .assetInfoList > li .topProductBox .my{margin-bottom: 6px; display: block; width: 43px; height: 31px; line-height: 31px; border-radius: 8px; background-color: #EBFAF9; color: #39B9B3; font-weight: 500; text-align: center;}
+.assetBox .assetInfoBox02 .assetInfoList > li .topProductBox h4{font-size: 36px; font-weight: 700; color: #000;}
 .assetBox .assetInfoBox02 .assetInfoList .assetList{padding: 25px 25px 25px 47px; background-color: #FBFBFB;}
 .assetBox .assetInfoBox02 .assetInfoList .assetList li{flex-wrap: wrap; padding: 15px 0; margin: 0; background: 0; border: 0;}
 
@@ -1058,8 +1058,8 @@ color: #626262; font-weight: 600;}
 
   .assetBox .assetInfoBox02 .assetInfoList{flex-direction: column; gap: 20px 0;}
   .assetBox .assetInfoBox02 .assetInfoList > li{width: 100%;}
-  .assetBox .assetInfoBox02 .assetInfoList > li .topBox h4{font-size: 26px;}
-  .assetBox .assetInfoBox02 .assetInfoList > li .topBox{padding: 25px 25px;}
+  .assetBox .assetInfoBox02 .assetInfoList > li .topProductBox h4{font-size: 26px;}
+  .assetBox .assetInfoBox02 .assetInfoList > li .topProductBox{padding: 25px 25px;}
   .assetBox .assetInfoBox02 .assetInfoList .assetList{padding: 20px 25px;}
 
 }
@@ -1070,7 +1070,7 @@ color: #626262; font-weight: 600;}
   .assetBox .assetInfoBox h3::before{width: 35px; height: 27px;}
   .assetBox .assetList li span{font-size: 16px;}
   .assetBox .assetInfoBox{padding: 40px 20px;}
-  .assetBox .assetInfoBox02 .assetInfoList > li .topBox h4{font-size: 22px;}
+  .assetBox .assetInfoBox02 .assetInfoList > li .topProductBox h4{font-size: 22px;}
 
 }
 
@@ -1080,8 +1080,8 @@ color: #626262; font-weight: 600;}
   .assetBox .assetInfoBox h3::before{top:-1px;}
   .assetBox .assetList li span{font-size: 14px;}
   .assetBox .assetInfoBox{padding: 40px 20px;}
-  .assetBox .assetInfoBox02 .assetInfoList > li .topBox h4{font-size: 18px;}
+  .assetBox .assetInfoBox02 .assetInfoList > li .topProductBox h4{font-size: 18px;}
   .assetBox .assetList li em{font-size: 16px;}
-  .assetBox .assetInfoBox02 .assetInfoList > li .topBox .my{font-size: 14px;}
+  .assetBox .assetInfoBox02 .assetInfoList > li .topProductBox .my{font-size: 14px;}
 
 }
