@@ -25,12 +25,6 @@ $(function () {
     nextArrow: $('.popupBox .next'),
   });
 
-  $('.popupBox .closeBtn').click(function () {
-    $('.popupWrap').removeClass('active');
-    $('body').removeClass('fixed');
-  });
-
-
   //헤더 
   $(window).load(function () {
     $('#headerWrap').addClass('active');

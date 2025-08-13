@@ -1131,7 +1131,7 @@
     <!-- //wrap -->
 
     <div class="popupWrap">
-        <div class="popupBox" id="mainPopup">
+        <div class="popupBox">
 
             <div class="slick">
                 <a href="sub/sub_event.html" class="slide">
@@ -1183,6 +1183,49 @@
                 time: 1000
             });
         });
+    </script>
+    <script>
+        
+        // 쿠키 저장 함수
+        function setCookie(name, value, days) {
+            var date = new Date();
+            date.setDate(date.getDate() + days);
+            document.cookie = name + "=" + value + ";expires=" + date.toUTCString() + ";path=/";
+        }
+
+        // 쿠키 읽기 함수
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length === 2) return parts.pop().split(";").shift();
+            return null;
+        }
+
+        $(function () {
+
+            $(window).load(function () {
+                // 페이지 로드 시 쿠키 확인
+                if (getCookie("hideToday") === "Y") {
+                    $('.popupWrap').removeClass('active');
+                    $('body').removeClass('fixed');
+                }
+            });
+
+            // 오늘 하루 보지 않기 버튼 클릭
+            $(".todayHideBtn").click(function () {
+                setCookie("hideToday", "Y", 1); // 1일간 유지
+                $('.popupWrap').removeClass('active');
+                $('body').removeClass('fixed');
+            });
+
+            // 닫기 버튼 클릭
+            $(".closeBtn").click(function () {
+                $('.popupWrap').removeClass('active');
+                $('body').removeClass('fixed');
+            });
+
+        })
+
     </script>
 
 </body>
