@@ -665,15 +665,15 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
 /* 문의하기 */
 .contactBox h3{margin-bottom: 30px; font-size: 35px; color: #000;}
-.inquiryList{margin-bottom: 40px;}
-.inquiryList li{margin-bottom: -1px;}
-.inquiryList li a{position: relative; padding: 20px 30px 20px 0; display: block; border: 1px solid #EAEAEA; border-width: 1px 0; }
-.inquiryList li a:hover h4{color: #FFB200;}
-.inquiryList li a::after{width: 24px; height: 24px; content: ''; position: absolute; top: 50%; transform: translateY(-50%); right:0; background: url(../images/sub/arrow_icon03.svg)no-repeat center;}
+.comList{margin-bottom: 40px;}
+.comList li{margin-bottom: -1px;}
+.comList li a{position: relative; padding: 20px 30px 20px 0; display: block; border: 1px solid #EAEAEA; border-width: 1px 0; }
+.comList li a:hover h4{color: #FFB200;}
+.comList li a::after{width: 24px; height: 24px; content: ''; position: absolute; top: 50%; transform: translateY(-50%); right:0; background: url(../images/sub/arrow_icon03.svg)no-repeat center;}
 .contactBox .button{display: inline-flex; margin-bottom: 60px;}
-.inquiryList li a h4{display: flex; align-items: center; flex-wrap: wrap; gap: 5px 20px; margin-bottom: 13px; font-size: 20px; color: #000; transition: all .3s;}
-.inquiryList li a h4 em{display: inline-flex; justify-content: center; width: 54px; height: 31px; line-height: 31px; border-radius: 8px; background-color: #FFEBEB; color: #FF3D3D; font-weight: 500;}
-.inquiryList li a .date{font-size: 18px; font-weight: 600; color: #A6A6A6;}
+.comList li a h4{display: flex; align-items: center; flex-wrap: wrap; gap: 5px 20px; margin-bottom: 13px; font-size: 20px; color: #000; transition: all .3s;}
+.comList li a h4 em{display: inline-flex; justify-content: center; width: 54px; height: 31px; line-height: 31px; border-radius: 8px; background-color: #FFEBEB; color: #FF3D3D; font-weight: 500;}
+.comList li a .date{font-size: 18px; font-weight: 600; color: #A6A6A6;}
 .contactBox .textAreaBox textarea{padding: 20px; width: 100%; height: 379px; border: 1px solid #F8F8F8; font-size: 18px; font-weight: 500; color: #000; border-radius: 16px;}
 .contactBox .textAreaBox textarea::placeholder{color: #D0D0D0;}
 .contactBox .btnBox{display: flex; justify-content: center; gap: 0 20px;}
@@ -685,9 +685,9 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
   .contactBox .button{margin-bottom: 30px;}
   .contactBox h3{font-size: 26px;}
-  .inquiryList li a h4{margin-bottom: 6px; gap: 5px 15px; font-size: 18px;}
-  .inquiryList li a .date{font-size: 16px;}
-  .inquiryList li a h4 em{font-size: 14px; width: 45px; height: 28px; line-height: 28px;}
+  .comList li a h4{margin-bottom: 6px; gap: 5px 15px; font-size: 18px;}
+  .comList li a .date{font-size: 16px;}
+  .comList li a h4 em{font-size: 14px; width: 45px; height: 28px; line-height: 28px;}
 
 }
 
@@ -702,9 +702,9 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
   .contactBox .button{margin-bottom: 25px;}
   .contactBox h3{margin-bottom: 15px; font-size: 16px;}
-  .inquiryList li a h4{gap: 5px 15px; font-size: 16px;}
-  .inquiryList li a .date{font-size: 14px;}
-  .inquiryList li a h4 em{font-size: 13px;}
+  .comList li a h4{gap: 5px 15px; font-size: 16px;}
+  .comList li a .date{font-size: 14px;}
+  .comList li a h4 em{font-size: 13px;}
 
 }
 
@@ -926,7 +926,7 @@ color: #626262; font-weight: 600;}
   .questionBox .inputSearchBox .btn{width: 30px; height: 30px; background-size: contain!important;}
   .questionBox .keywordList{gap: 7px;}
   .questionBox .questionList,
-  .questionBox .inquiryList{margin-bottom: 20px;}
+  .questionBox .comList{margin-bottom: 20px;}
 
   .questionBox .infoList li a{height: 198px; padding: 20px;}
   .questionBox .infoList li a h3{text-align: center; font-size: 18px;}
