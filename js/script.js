@@ -5,7 +5,7 @@ $(function () {
     $('.popupWrap').addClass('active');
     if (($('.popupWrap').hasClass('active'))) {
       $('body').addClass('fixed');
-    } 
+    }
   });
 
   $(".popupBox .slick").slick({
@@ -37,6 +37,8 @@ $(function () {
       $('#headerWrap').removeClass('scroll');
     }
   });
+
+  $('#headerWrap .menuBox .menuList > li:has(ul)').children('h2').addClass('active');
 
   //모바일 메뉴
   $('#headerWrap .mobileMenuBtn').click(function () {

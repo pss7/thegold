@@ -166,6 +166,8 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 #headerWrap .menuBox::after{background-color: #000;}
 #headerWrap .loginBox a,
 #headerWrap .menuBox .menuList li h2 a{color: #000;}
+#headerWrap .menuBox .menuList li h2.active a::after{border-right: 1px solid #000;
+border-bottom: 1px solid #000;}
 
 /* 로그인 */
 #subWrap .loginBox{padding: 90px 0 0;}

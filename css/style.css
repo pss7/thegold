@@ -122,19 +122,29 @@
 #headerWrap .logoBox h1 a img{display: block;}
 #headerWrap .logoBox h1 a img{width: 170px;}
 #headerWrap .menuBox{display: flex; align-items: center; gap: 0 50px; position: relative;}
-#headerWrap .menuBox::after{content: ''; position: absolute; top:31px; right:-26px; width: 1px; height: 12px; background-color: #fff;}
+#headerWrap .menuBox::after{display: none; content: ''; position: absolute; top:31px; right:-26px; width: 1px; height: 12px; background-color: #fff;}
 #headerWrap .menuBox .menuList{position: relative; display: flex; align-items: center; gap: 0 0;}
 #headerWrap .menuBox .menuList::after{content: ''; position: absolute; top:31px; right:-26px; width: 1px; height: 12px; background-color: #fff;}
 #headerWrap .menuBox .menuList:last-child::after{display: none;}
+#headerWrap .menuBox .menuList > li{position: relative;}
+#headerWrap .menuBox .menuList li:hover h2 a{color: #F89419;}
+#headerWrap .menuBox .menuList li:hover h2 a::before{width: 100%;}
+#headerWrap .menuBox .menuList li:hover .menuList02{opacity: 1; visibility: visible;}
 #headerWrap .menuBox .menuList li h2 a{position: relative; padding: 26px 25px; display: block; color: #fff; font-weight: 500; font-size: 16px; transition: all .3s;}
 #headerWrap .loginBox a::before,
 #headerWrap .menuBox .menuList li h2 a::before{content: ''; position: absolute; left:0; bottom: 0; width: 0; height: 1px; background-color: #FFB200; transition: all .3s;}
+#headerWrap .menuBox .menuList li h2.active a::before{display: none;}
+#headerWrap .menuBox .menuList li h2.active a::after { content: '';
+  position: absolute; top: 50%; right: 0; width: 5px; height: 5px;
+  border-right: 1px solid #fff; border-bottom: 1px solid #fff; transform: translateY(-80%) rotate(45deg); transition: all .3s;}
+#headerWrap .menuBox .menuList li:hover h2 a::after{border-right: 1px solid #FFB200!important; border-bottom: 1px solid #FFB200!important;}
+#headerWrap .menuBox .menuList02{opacity: 0; padding: 10px 0; position: absolute; width: 140px; top:75px; left:50%; right:0; border-radius: 8px; background-color: #FFF7E5; transform: translateX(-50%); visibility: hidden; transition: all .3s;}
+#headerWrap .menuBox .menuList02 li h3 a{padding: 8px 10px; display: block; font-size: 16px; color: #FFB200; word-break: keep-all; text-align: center; transition: all .3s;}
+#headerWrap .menuBox .menuList02 li h3 a:hover{background-color: #F89419; color: #fff;}
 #headerWrap .loginBox{display: flex; align-items: center; gap: 0 0;} 
 #headerWrap .loginBox a{position: relative; padding: 25px; color: #fff; font-weight: 500;}
-#headerWrap .loginBox a:hover,
-#headerWrap .menuBox .menuList li h2 a:hover{color: #FFB200;}
-#headerWrap .loginBox a:hover::before,
-#headerWrap .menuBox .menuList li h2 a:hover::before{width: 100%;}
+#headerWrap .loginBox a:hover{color: #FFB200;}
+#headerWrap .loginBox a:hover::before{width: 100%;}
 #headerWrap .mobileMenuBtn{display: none;}
 #headerWrap .mobileMenuWrap{display: none;}
 
@@ -161,7 +171,21 @@
   #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(3) h2 a::before{margin-top: -2px; background: url(../images/common/icon07.svg)no-repeat center;}
   #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(4) h2 a::before{background: url(../images/common/icon12.svg)no-repeat center;}
   #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(5) h2 a::before{background: url(../images/common/icon04.svg)no-repeat center;}
-  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(6) h2 a::before{margin-top: -2px; background: url(../images/common/icon02.svg)no-repeat center;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(6) h2 a::before{margin-top: -2px; background: url(../images/common/icon03.svg)no-repeat center;}
+
+
+
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(7) h2 a::before{margin-top: -2px; background: url(../images/common/icon02.svg)no-repeat center;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(8) h2 a::before{background: url(../images/common/icon05.svg)no-repeat center;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(9) h2 a::before{margin-top: -2px; background: url(../images/common/icon06.svg)no-repeat center;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(10) h2 a::before{background: url(../images/common/icon08.svg)no-repeat center;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(11) h2 a::before{background: url(../images/common/icon09.svg)no-repeat center;}
+  #headerWrap .mobileMenuWrap .mobileMenu li:nth-child(12) h2 a::before{margin-top: -2px; background: url(../images/common/icon11.svg)no-repeat center;}
+
+
+
+
+
   #headerWrap .mobileLink{margin-top: 24px;}
   #headerWrap .mobileLink li a{position: relative; display: block; padding: 13px 15px 13px 20px;}
   #headerWrap .mobileLink li a::after {content: ""; position: absolute; right: 18px; top: 50%;
