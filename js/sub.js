@@ -3,6 +3,10 @@ $(function () {
 
   $(window).load(function () {
     $('.introduceBox .top').addClass('active');
+    AOS.init({
+      duration: 2000
+    });
+    $('.productDetailBox .titleBox_01').addClass('active');
   });
 
   //선택
@@ -72,11 +76,11 @@ $(function () {
     $('.issuedModalWrap').addClass('active');
   });
 
-    $('.issuedModalWrap .modalCloseBtn').click(function () {
+  $('.issuedModalWrap .modalCloseBtn').click(function () {
     $('.issuedModalWrap').removeClass('active');
   });
 
-    //자주 묻는 질문 
+  //자주 묻는 질문 
   $('.questionBox .questionList li a').click(function () {
     if ($(this).hasClass('active')) {
       $('.questionBox .questionList li a').removeClass('active');
@@ -89,6 +93,16 @@ $(function () {
       $(this).next().slideDown();
     }
     return false
+  })
+
+  //모달
+  $('.detail_btn').click(function () {
+    $('.productModalWrap').addClass('active');
+    $('.detail_btn02').addClass('active');
+  })
+  $('.productModalCloseBtn').click(function () {
+    $('.productModalWrap').removeClass('active');
+    $('.detail_btn02').removeClass('active');
   })
 
 });
