@@ -17,6 +17,10 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
 }
 
+/* 공통 - 상태 */
+.state01{color: #FFB200!important; background-color: #FFF7E5!important;}
+.state02{background-color: #ddd!important; color: #fff!important;}
+
 /* 공통 - 상단 */
 #subWrap .topBox{position: relative; height: 446px; margin-bottom: 130px; z-index: 999; overflow: hidden;}
 #subWrap .topBox img{display: block; width: 100%; height: 100%; object-fit: cover; /*transform: scale(1.5); transition: all 5s;*/}
@@ -79,6 +83,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
 /* 공통 - 여백 */
 .mb-15{margin-bottom: 15px;}
+.mt-30{margin-top: 30px!important;}
 
 /* 공통 - 폼 */
 .formBox{margin-bottom: 25px;}
@@ -499,22 +504,6 @@ border-bottom: 1px solid #000;}
   .detail_btn{font-size: 14px;}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 회사소개 */
 .introduceBox .top{padding: 0 20px; position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden;}
@@ -1140,7 +1129,7 @@ color: #626262; font-weight: 600;}
 .noticeBox .topTitleBox h4{margin-bottom: 25px; font-size: 35px; font-weight: 700; color: #000;}
 .noticeBox .topTitleBox .date{font-size: 25px; font-weight: 700; color:#C0C0C0;}
 .noticeBox .content{padding: 50px 0; font-size: 18px; color: #565656;  border: 1px solid #F1F1F1; border-width: 1px 0;}
-.noticeBox .btnBox{display: flex;  gap: 0 40px; margin-bottom: 40px;}
+.noticeBox .btnBox{display: flex;  gap: 0 40px; margin:20px 0 40px;}
 .noticeBox .btnBox a{flex: 1; height: 80px; line-height: 80px; background-color: #F4F4F4; border-radius: 16px; color: #B3B3B3; font-size: 20px; font-weight: 600; text-align: center;}
 .noticeBox .btnBox a span{display: flex; align-items: center; justify-content: center; gap: 0 20px;}
 .noticeBox .btnBox a.prev span::before{margin-top: -1px; content: ''; width: 17px; height: 14px; background: url(../images/sub/prev_arrow_icon.svg)no-repeat center; background-size: contain!important;}
@@ -1451,5 +1440,4 @@ color: #626262; font-weight: 600;}
 
 /* 인재채용 */
 .employmentBox .topSelectBtn .active{color: #FFB200; background-color: #FFF7E5; border: 0;}
-.employmentBox .recruitment{color: #FFB200; background-color: #FFF7E5;}
-.employmentBox .close{background-color: #ddd; color: #fff;}
+
