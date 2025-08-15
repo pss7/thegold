@@ -7,6 +7,7 @@ $(function () {
       duration: 2000
     });
     $('.productDetailBox .titleBox_01').addClass('active');
+    $('#subWrap .topBox').addClass('active');
   });
 
   //선택
@@ -54,6 +55,23 @@ $(function () {
         }
       }
     ]
+  });
+
+  //비전 탭
+  $('.visionBox .coreValuesList_0602 > li a').click(function () {
+
+    if ($(this).parent().hasClass('active')) {
+      $('.visionBox .coreValuesTextBox_0604').slideUp();
+      $('.visionBox .coreValuesList_0602 > li').removeClass('active');
+    } else {
+      $('.visionBox .coreValuesTextBox_0604').hide();
+      $('.visionBox .coreValuesList_0602 > li').removeClass('active');
+      $(this).parent().addClass('active');
+      $(this).parent().find('.coreValuesTextBox_0604').slideDown();
+    }
+
+    return false;
+
   });
 
   //입-출금 신청
