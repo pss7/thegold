@@ -116,7 +116,7 @@
 #headerWrap .headerBox{display: flex; align-items: center; gap: 0 50px; justify-content: space-between;}
 #headerWrap .logoBox h1 a,
 #headerWrap .logoBox h1 a img{display: block;}
-#headerWrap .logoBox h1 a img{width: 170px;}
+#headerWrap .logoBox h1 a img{width: 90px;}
 #headerWrap .menuBox{display: flex; align-items: center; gap: 0 50px; position: relative;}
 #headerWrap .menuBox::after{display: none; content: ''; position: absolute; top:31px; right:-26px; width: 1px; height: 12px; background-color: #000;}
 #headerWrap .menuBox .menuList{position: relative; display: flex; align-items: center; gap: 0 0;}
@@ -148,7 +148,7 @@
 
   #headerWrap{background-color: #fff!important;}
   #headerWrap .logoBox h1 a{padding: 10px 0;}
-  #headerWrap .logoBox h1 a img{width: 150px;}
+  #headerWrap .logoBox h1 a img{width: 70px;}
   #headerWrap .layoutBox{display: none;}
   #headerWrap .mobileMenuBtn {display: inline-flex; flex-direction: column; justify-content: space-between;
   width: 27px; height: 17px;}
