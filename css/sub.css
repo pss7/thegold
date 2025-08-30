@@ -1367,7 +1367,7 @@ color: #626262; font-weight: 600;}
 .visionBox .sloganBox_05{margin-top: 80px; margin-bottom: 40px;}
 .visionBox .sloganBox_0501{padding: 80px 20px 60px; background-color: #F9F9F9; border-radius: 20px;}
 .visionBox .sloganBox_0501 .sloganLogoBox_0502{margin-bottom: 40px;}
-.visionBox .sloganBox_0501 .sloganLogoBox_0502 img{display: block; margin: 0 auto;}
+.visionBox .sloganBox_0501 .sloganLogoBox_0502 img{display: block; width: 200px; margin: 0 auto;}
 .visionBox .sloganBox_0501 .sloganText_0503{text-align: center; font-size: 20px;}
 .visionBox .sloganBox_0501 .sloganText_0503 strong{color: #FFB200; font-weight: 600;}
 .visionBox .coreValuesList_0602 > li{border-bottom: 1px solid #F5F5F5;}
@@ -1493,6 +1493,8 @@ color: #626262; font-weight: 600;}
 
   .visionBox .sloganBox_05{margin-top: 0;}
   .visionBox .sloganBox_0501 .sloganText_0503 br{display: none;}
+
+  .visionBox .sloganBox_0501 .sloganLogoBox_0502 img{width: 150px;}
 
 }
 

@@ -202,7 +202,7 @@
 }
 
 /* 푸터 */
-#footerWrap{padding: 100px 0 80px; background-color: #FBFBFB;}
+#footerWrap{padding: 60px 0; background-color: #FBFBFB;}
 #footerWrap .footerLogoBox{margin-bottom: 15px;}
 #footerWrap .footerLogoBox h1 img{margin-bottom: 25px; display: block; width: 150px;}
 #footerWrap .footerLogoBox h1 span{display: block; font-size: 30px; font-weight: 700; color: #000;}
@@ -218,7 +218,6 @@
 
 @media (max-width: 1199px){
 
-  #footerWrap{padding: 60px 0;}
   #footerWrap .footerLogoBox h1 img{margin: 0 auto 30px;}
   #footerWrap{text-align: center;}
   #footerWrap .footerInfoList .infoBox{justify-content: center;}
