@@ -114,13 +114,18 @@ $(function () {
   })
 
   //모달
-  $('.detail_btn').click(function () {
-    $('.productModalWrap').addClass('active');
-    $('.detail_btn02').addClass('active');
+  $('.detail_btn02').click(function () {
+    $('.productModalWrap02').addClass('active');
   })
-  $('.productModalCloseBtn').click(function () {
-    $('.productModalWrap').removeClass('active');
-    $('.detail_btn02').removeClass('active');
+  $('.productModalCloseBtn02').click(function () {
+    $('.productModalWrap02').removeClass('active');
+  })
+
+  $('.detail_btn01').click(function () {
+    $('.productModalWrap01').addClass('active');
+  })
+  $('.productModalCloseBtn01').click(function () {
+    $('.productModalWrap01').removeClass('active');
   })
 
 });

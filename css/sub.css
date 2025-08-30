@@ -439,9 +439,11 @@ border-bottom: 1px solid #000;}
 .productDetailBox .infoBox_05 .imgBox_05_04{margin-bottom: 50px;}
 .productDetailBox .infoBox_05 .imgBox_05_04 img{display: block; width: 100%; margin-bottom: 16px;}
 .productDetailBox .infoBox_05 .imgBox_05_04 span{display: block; text-align: right; color: #fff; font-size: 14px; font-weight: 600;}
-.detail_btn{display: block; height: 50px; position: sticky; max-width: 377px; width: 100%; margin: 30px auto 0; left:0; right:0; bottom: 20px; background-color: #FFB200; color: #fff; font-size: 18px; font-weight: 500; border-radius: 10px; z-index: 99999;}
-.detail_btn02.active{visibility: hidden;}
-
+.productDetailBox .btnBox{position: sticky; margin: 30px auto 0; left:0; right:0; bottom: 20px;  display: flex; justify-content: center; gap: 0 10px;}
+.productDetailBox .btnBox button{max-width: none; }
+.detail_btn{display: block; height: 50px; width: 100%; background-color: #FFB200; color: #fff; font-size: 18px; font-weight: 500; border-radius: 10px; z-index: 99999;}
+.detail_btn01{background-color: #fff; color: #000; border: 1px solid #FFB200;}
+.productModalWrap .detail_btn{margin: 30px auto 0;}
 
 @media (max-width: 1199px){
 
@@ -1265,6 +1267,12 @@ color: #626262; font-weight: 600;}
 
 
 /* 투자하기 모달 */
+.productModalWrap01 .productModalTitleBox{margin-bottom: 20px;}
+.productModalWrap01 .productInfoText{margin-top: 20px;}
+.productModalWrap01 .productInfoText .box{padding: 15px 0; display: flex; flex-wrap: wrap; gap: 10px 0; align-items: center; justify-content: space-between; border-bottom: 1px solid #e8e8e8;}
+.productModalWrap01 .productInfoText .box span{font-size: 15px; color: #000;}
+.productModalWrap01 .productInfoText .box span em{color: #898989;}
+.productModalWrap01 .productInfoText .box em{font-size: 15px; color: #000;}
 .productModalWrap{position: fixed; bottom: -1000px; left:0; right:0; padding: 40px 20px 30px; max-width: 420px; width: 100%; margin: 0 auto; background-color: #fff; border-radius: 16px 16px 0 0; box-shadow: 0px 2px 15px #bfbfbf40; border: 1px solid #eaeaea; z-index: 9999; transition: all .5s;}
 .productModalWrap.active{bottom: 0;}
 .productModalWrap .productModalTitleBox{padding-bottom: 20px; border-bottom: 1px solid #e8e8e8;}
