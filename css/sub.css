@@ -7,7 +7,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
 @media (max-width: 1199px){
 
-  #subWrap{margin-top: 63px;}
+  #subWrap{margin-top: 65px;}
 
 }
 
@@ -386,7 +386,14 @@ border-bottom: 1px solid #000;}
 }
 
 /* 금융상품 상세 */
-.productDetailBox{max-width: 860px; padding: 0 20px; margin: 0 auto;}
+.productDetailBox{max-width: 860px; padding: 50px 0 30px; margin: 0 auto;}
+.productDetailBox .infoBox_03{margin:70px auto 60px; border-radius: 15px; overflow: hidden;}
+.productDetailBox .infoBox_03 .infoList{display: flex; padding: 50px 0 40px; background: url(../images/sub/bg.png)no-repeat center -230px; background-size: cover; }
+.productDetailBox .infoBox_03 .infoList li{position: relative; flex: 1; text-align: center;}
+.productDetailBox .infoBox_03 .infoList li::after{content: ''; position: absolute; top:50%; right:0; margin-top: -10px; width: 1px; height: 20px; background-color: #fff;}
+.productDetailBox .infoBox_03 .infoList li:last-child::after{display: none;}
+.productDetailBox .infoBox_03 .infoList li span{display: block; margin-bottom: 10px; font-size: 20px; font-weight: 600; color: #fff;} 
+.productDetailBox .infoBox_03 .infoList li strong{display: block; font-size: 28px;}
 .productDetailBox .titleBox_01{position: relative; margin-bottom: 50px; padding: 80px 20px 75px;  border-radius: 32px; z-index: 1; overflow: hidden;}
 .productDetailBox .titleBox_01::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/sub/introduce_img01.jpg)no-repeat center; background-size: cover; z-index: -1; transform: scale(1.3); transition: all 3s;}
 .productDetailBox .titleBox_02{position: relative; padding: 40px 20px 35px!important; border-radius: 20px!important;}
@@ -462,6 +469,10 @@ border-bottom: 1px solid #000;}
   .productDetailBox .infoBox_02 .infoListType01 li p{margin-bottom: 0;}
   .productDetailBox .infoBox_02 .infoList_0202{margin-top: 20px;}
 
+  .productDetailBox .infoBox_03 .infoList{background-position: center;}
+  .productDetailBox .infoBox_03 .infoList li span{font-size: 18px;}
+  .productDetailBox .infoBox_03 .infoList li strong{font-size: 26px;}
+
 }
 
 @media (max-width: 767px){
@@ -485,6 +496,10 @@ border-bottom: 1px solid #000;}
 
   .detail_btn{font-size: 16px;}
 
+  .productDetailBox .infoBox_03 .infoList li span{font-size: 16px;}
+  .productDetailBox .infoBox_03 .infoList li strong{font-size: 22px;}
+  .productDetailBox .infoBox_03 .infoList li::after{height: 15px; margin-top: -7.5px;}
+
 }
 
 @media (max-width: 480px){
@@ -507,6 +522,15 @@ border-bottom: 1px solid #000;}
   .productDetailBox .infoBox_02 .infoList_0202 li strong br{display: none;}
 
   .detail_btn{font-size: 14px;}
+
+  .productDetailBox .infoBox_03{border-radius: 10px;}
+  .productDetailBox .infoBox_03 .infoList{position: relative; flex-direction: column; gap: 70px 0; z-index: 1;}
+  .productDetailBox .infoBox_03 .infoList::before{content: ""; position: absolute; top:0; left:0; right:0; bottom: 0; z-index: 999; background-color: rgba(0,0,0,.3); z-index: -1;}
+  .productDetailBox .infoBox_03 .infoList li span{margin-bottom: 5px; font-size: 14px;}
+  .productDetailBox .infoBox_03 .infoList li strong{font-size: 18px;}
+  .productDetailBox .infoBox_03 .infoList li::after{top: auto; bottom: -35px; top: auto;
+   left: 50%; margin-left: -6.5px;  width: 13px; height: 1px; margin-top:0}
+
 
 }
 

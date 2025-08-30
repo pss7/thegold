@@ -109,40 +109,36 @@
 .container{max-width: 1240px; margin: 0 auto; padding: 0 20px;}
 
 /* 헤더 */
-#headerWrap{position: fixed; top:-300px; left:0; right:0;  z-index: 9999999; transition: all 1.5s;}
+#headerWrap{position: fixed; top:-300px; left:0; right:0;  z-index: 9999999; transition: all 1.5s; background-color: #fff;}
 #headerWrap.active{top:0;}
-#headerWrap.scroll{background-color: #fff; box-shadow: 0 10px 10px rgba(0,0,0,.1);}
-#headerWrap.scroll .menuBox .menuList li h2 a,
-#headerWrap.scroll .loginBox a{color: #000;}
-#headerWrap.scroll .menuBox::after,
-#headerWrap.scroll .menuBox .menuList::after{background-color: #000;}
+#headerWrap.scroll{box-shadow: 0 10px 10px rgba(0,0,0,.1);}
 #headerWrap .layoutBox{flex-shrink: 0; display: flex; align-items: center; gap: 0 50px;}
 #headerWrap .headerBox{display: flex; align-items: center; gap: 0 50px; justify-content: space-between;}
 #headerWrap .logoBox h1 a,
 #headerWrap .logoBox h1 a img{display: block;}
 #headerWrap .logoBox h1 a img{width: 170px;}
 #headerWrap .menuBox{display: flex; align-items: center; gap: 0 50px; position: relative;}
-#headerWrap .menuBox::after{display: none; content: ''; position: absolute; top:31px; right:-26px; width: 1px; height: 12px; background-color: #fff;}
+#headerWrap .menuBox::after{display: none; content: ''; position: absolute; top:31px; right:-26px; width: 1px; height: 12px; background-color: #000;}
 #headerWrap .menuBox .menuList{position: relative; display: flex; align-items: center; gap: 0 0;}
-#headerWrap .menuBox .menuList::after{content: ''; position: absolute; top:31px; right:-26px; width: 1px; height: 12px; background-color: #fff;}
+#headerWrap .menuBox .menuList::after{content: ''; position: absolute; top:31px; right:-26px; width: 1px; height: 12px; background-color: #000;}
 #headerWrap .menuBox .menuList:last-child::after{display: none;}
 #headerWrap .menuBox .menuList > li{position: relative;}
 #headerWrap .menuBox .menuList li:hover h2 a{color: #F89419;}
 #headerWrap .menuBox .menuList li:hover h2 a::before{width: 100%;}
 #headerWrap .menuBox .menuList li:hover .menuList02{opacity: 1; visibility: visible;}
-#headerWrap .menuBox .menuList li h2 a{position: relative; padding: 26px 25px; display: block; color: #fff; font-weight: 500; font-size: 16px; transition: all .3s;}
+#headerWrap .menuBox .menuList li h2 a{position: relative; padding: 26px 25px; display: block; color: #000; font-weight: 500; font-size: 16px; transition: all .3s;}
 #headerWrap .loginBox a::before,
 #headerWrap .menuBox .menuList li h2 a::before{content: ''; position: absolute; left:0; bottom: 0; width: 0; height: 1px; background-color: #FFB200; transition: all .3s;}
 #headerWrap .menuBox .menuList li h2.active a::before{display: none;}
 #headerWrap .menuBox .menuList li h2.active a::after { content: '';
   position: absolute; top: 50%; right: 0; width: 5px; height: 5px;
-  border-right: 1px solid #fff; border-bottom: 1px solid #fff; transform: translateY(-80%) rotate(45deg); transition: all .3s;}
+  border-right: 1px solid #000; border-bottom: 1px solid #000; transform: translateY(-80%) rotate(45deg); transition: all .3s;}
 #headerWrap .menuBox .menuList li:hover h2 a::after{border-right: 1px solid #FFB200!important; border-bottom: 1px solid #FFB200!important;}
 #headerWrap .menuBox .menuList02{opacity: 0; padding: 10px 0; position: absolute; width: 140px; top:75px; left:50%; right:0; border-radius: 8px; background-color: #FFF7E5; transform: translateX(-50%); visibility: hidden; transition: all .3s;}
 #headerWrap .menuBox .menuList02 li h3 a{padding: 8px 10px; display: block; font-size: 16px; color: #FFB200; word-break: keep-all; text-align: center; transition: all .3s;}
 #headerWrap .menuBox .menuList02 li h3 a:hover{background-color: #F89419; color: #fff;}
 #headerWrap .loginBox{display: flex; align-items: center; gap: 0 0;} 
-#headerWrap .loginBox a{position: relative; padding: 25px; color: #fff; font-weight: 500;}
+#headerWrap .loginBox a{position: relative; padding: 25px; color: #000; font-weight: 500;}
 #headerWrap .loginBox a:hover{color: #FFB200;}
 #headerWrap .loginBox a:hover::before{width: 100%;}
 #headerWrap .mobileMenuBtn{display: none;}
@@ -151,8 +147,8 @@
 @media (max-width: 1199px){
 
   #headerWrap{background-color: #fff!important;}
-  #headerWrap .logoBox h1 a{padding: 20px 0;}
-  #headerWrap .logoBox h1 a img{width: 110px;}
+  #headerWrap .logoBox h1 a{padding: 10px 0;}
+  #headerWrap .logoBox h1 a img{width: 150px;}
   #headerWrap .layoutBox{display: none;}
   #headerWrap .mobileMenuBtn {display: inline-flex; flex-direction: column; justify-content: space-between;
   width: 27px; height: 17px;}
