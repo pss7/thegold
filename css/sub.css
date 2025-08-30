@@ -571,6 +571,9 @@ border-bottom: 1px solid #000;}
 .introduceBox .infoBox02 .infoText li:nth-child(2):after{bottom: 11px; width: 282px; height: 212px; right:26px; background: url(../images/sub/info_icon02.svg)no-repeat center;}
 .introduceBox .infoBox02 .infoText li strong{display: block; margin-bottom: 12px; font-size: 30px; color: #fff;}
 .introduceBox .infoBox02 .infoText li p{font-size: 22px; font-weight: 700; color: #fff;}
+.introduceBox .infoBox03 .list{margin-top: 80px; display: flex; justify-content: center; gap: 0 20px;}
+.introduceBox .infoBox03 .list li{padding: 55px 30px 35px; display: flex; align-items: center; justify-content: center; position: relative; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 5px 10px rgba(0,0,0,.1); text-align: center; word-break: keep-all;}
+.introduceBox .infoBox03 .list li span{position: absolute; top:-17px; left: 50%; transform: translateX(-50%); width: 35px; height: 35px; line-height: 35px; border-radius: 50%; text-align: center; background-color: #FFB200; color: #fff; font-weight: 600;}
 .introduceBox .introduceTextBox{padding: 90px 0 0;}
 .introduceBox .introduceTextBox .titleBox{margin-bottom: 80px;}
 .introduceBox .introduceTextBox .titleBox .title{text-align: left;}
@@ -609,6 +612,8 @@ border-bottom: 1px solid #000;}
   .introduceBox .introduceTextBox{padding: 60px 0 0;}
   .introduceBox .introduceTextBox .text{font-size: 18px;}
 
+  .introduceBox .infoBox03{margin-bottom: 40px;}
+
 }
 
 @media (max-width: 767px){
@@ -635,6 +640,8 @@ border-bottom: 1px solid #000;}
   .introduceBox .introduceTextBox .text br{display: none;}
   .introduceBox .introduceTextBox .text span{display: block; margin-top: 20px;}
 
+  .introduceBox .infoBox03 .list{flex-direction: column; gap: 50px 0;}
+
 }
 
 @media (max-width: 576px){
@@ -656,7 +663,11 @@ border-bottom: 1px solid #000;}
 
 @media (max-width: 480px){
 
-    .introduceBox .infoBox .titleBox{margin-bottom: 60px;}
+  .introduceBox .infoBox03 .list{margin-top: 65px;}
+  .introduceBox .infoBox03{margin-bottom: 50px;}
+  .introduceBox .infoBox .titleBox{margin-bottom: 60px;}
+  .introduceBox .infoBox03 .list li span{width: 30px; height: 30px; line-height: 30px; font-size: 14px;}
+  .introduceBox .infoBox03 .list li{padding: 50px 30px 30px; font-size: 14px; border-radius: 5px;}
 
 }
 
